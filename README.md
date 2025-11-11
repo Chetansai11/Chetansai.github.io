@@ -5,12 +5,13 @@ A minimalistic, colorful portfolio website with dark theme support and signature
 ## Structure
 
 The website is split into separate pages:
-- `index.html` - Home/Hero page
-- `about.html` - About me section
-- `projects.html` - Projects showcase
+- `index.html` - Home/Hero page with updates section
 - `education.html` - Education and certifications
+- `experience.html` - Professional experience and leadership
 - `skills.html` - Technical skills
+- `projects.html` - Projects showcase
 - `contact.html` - Contact information
+- `updates/` - Event detail pages (TAMU Datathon, Aggie Invent)
 
 ## Features
 
@@ -79,11 +80,14 @@ Edit `assets/css/custom.css` to change accent colors:
 
 ```
 ├── index.html
-├── about.html
-├── projects.html
 ├── education.html
+├── experience.html
 ├── skills.html
+├── projects.html
 ├── contact.html
+├── updates/
+│   ├── tamu-datathon.html
+│   └── aggie-invent.html
 ├── assets/
 │   ├── css/
 │   │   ├── main.css

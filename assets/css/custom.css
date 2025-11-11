@@ -246,9 +246,10 @@ nav {
 
 .nav-brand.signature-brand {
 	font-family: 'Dancing Script', cursive;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	font-weight: 600;
 	color: var(--primary);
+	letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -489,6 +490,19 @@ main {
 
 .btn-github:hover {
 	background: var(--accent-2);
+}
+
+.btn-resume {
+	display: inline-flex;
+	align-items: center;
+	background: var(--primary);
+	color: white;
+}
+
+.btn-resume:hover {
+	background: var(--accent-2);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
 }
 
 .hero-image {
@@ -902,4 +916,109 @@ a:not(.btn):not(.nav-brand) {
 .fade-in.visible {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+/* Event Cards Styling */
+.event-card {
+	position: relative;
+	overflow: hidden;
+	padding-top: 3rem;
+}
+
+.event-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3));
+	opacity: 0;
+	transition: var(--transition);
+}
+
+.event-card:hover::before {
+	opacity: 1;
+}
+
+.event-icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: var(--transition);
+}
+
+.event-card:hover .event-icon {
+	transform: translateY(-4px) scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-badge {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	background: var(--bg-secondary);
+	border: 1px solid var(--border);
+	color: var(--text-primary);
+	margin-top: 0.5rem;
+	transition: var(--transition);
+}
+
+.event-card:hover .event-badge {
+	background: var(--primary);
+	color: white;
+	border-color: var(--primary);
+	transform: translateY(-2px);
+}
+
+.achievement-badge {
+	background: linear-gradient(135deg, var(--accent-3), var(--accent-4));
+	color: white;
+	border-color: transparent;
+	box-shadow: 0 2px 8px rgba(139, 0, 0, 0.3);
+}
+
+.event-card:hover .achievement-badge {
+	background: linear-gradient(135deg, var(--accent-4), var(--accent-5));
+	box-shadow: 0 4px 12px rgba(139, 0, 0, 0.4);
+}
+
+/* Enhanced Section Styling */
+.section {
+	position: relative;
+}
+
+.section.muted-bg {
+	background: var(--bg-secondary);
+}
+
+/* Enhanced Hero Section */
+.hero-content h1 {
+	position: relative;
+}
+
+/* Beautiful gradient overlays */
+.section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, var(--border), transparent);
+	opacity: 0.5;
+}
+
+/* Responsive adjustments for signature brand */
+@media (max-width: 768px) {
+	.nav-brand.signature-brand {
+		font-size: 1.25rem;
+	}
 }
