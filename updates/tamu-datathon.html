@@ -58,60 +58,182 @@
 						</div>
 						<div>
 							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">TAMU Datathon</h1>
-							<div class="event-badge" style="display: inline-block;">Hackathon</div>
+							<div class="event-badge achievement-badge" style="display: inline-block; font-size: 1rem; padding: 0.75rem 1.5rem;">🏆 Best Use of MongoDB</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="content fade-in">
-				<div class="card" style="margin-bottom: 2rem;">
-					<h2 style="margin-bottom: 1.5rem; color: var(--accent-1);">Overview</h2>
+				<!-- Event Images Gallery -->
+				<div class="grid grid-3 fade-in" style="margin-bottom: 2rem;">
+					<div class="card" style="padding: 0; overflow: hidden;">
+						<img src="../images/events/Tamu-Datathon-Team.JPG" alt="TAMU Datathon Team" style="width: 100%; height: auto; display: block;" />
+					</div>
+					<div class="card" style="padding: 0; overflow: hidden;">
+						<img src="../images/events/Tamu-Datathon-MCP-demo.jpg" alt="G-3 Project Demo" style="width: 100%; height: auto; display: block;" />
+					</div>
+					<div class="card" style="padding: 0; overflow: hidden;">
+						<img src="../images/events/Tamu-datathon-Award-taking.JPG" alt="Best Use of MongoDB Award" style="width: 100%; height: auto; display: block;" />
+					</div>
+				</div>
+
+				<div class="card" style="margin-bottom: 2rem; border: 2px solid var(--accent-1); background: linear-gradient(135deg, rgba(80, 0, 0, 0.05), rgba(124, 10, 2, 0.05));">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-1);">🏆 Achievement: Best Use of MongoDB</h2>
 					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
-						Participated in TAMU Datathon, a competitive hackathon focused on data science and machine learning challenges. This event brought together talented students and professionals to solve real-world problems using advanced analytics and AI techniques.
+						Won the <strong style="color: var(--accent-1);">Best Use of MongoDB</strong> award at TAMU Datathon for our project <strong style="color: var(--accent-1);">G-3</strong>, an intelligent Google Workspace assistant that unifies 20+ Google services into one natural language interface.
 					</p>
 					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
-						Worked on innovative solutions using advanced analytics and AI techniques, collaborating with a team to develop data-driven approaches to complex challenges.
+						Our innovative use of MongoDB for context management and conversation history enabled the assistant to maintain continuity across sessions, making follow-up questions like "that meeting" or "the document I created" work naturally.
 					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-1);">Project: G-3 - Intelligent Google Workspace Assistant</h2>
+					
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2); margin-top: 1.5rem;">💡 Inspiration</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						We were frustrated by switching between multiple Google apps (Calendar, Gmail, Drive, Maps, etc.) to complete simple tasks. We wanted a single conversational interface that could access all Google services and understand context across them—like asking "How long to my next meeting?" and getting an answer that checks your calendar, calculates travel time, and suggests when to leave—all in one conversation.
+					</p>
+
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2); margin-top: 1.5rem;">⚡ What it does</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						G-3 is an intelligent Google Workspace assistant that unifies 20+ Google services into one natural language interface. Users can ask questions or give commands in plain English, and the assistant automatically:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Manages your schedule:</strong> View, create, edit, and delete calendar events; calculate travel times to meetings</li>
+						<li><strong>Handles communications:</strong> Search and read Gmail, find contacts, create Google Meet links</li>
+						<li><strong>Creates content:</strong> Generate Google Docs, Slides, and Sheets on the fly</li>
+						<li><strong>Organizes work:</strong> Manage Google Tasks, create and search Google Keep notes, find files in Drive</li>
+						<li><strong>Provides information:</strong> Search the web, get weather forecasts, find nearby places, check air quality, get timezone info</li>
+						<li><strong>Manages forms:</strong> Create Google Forms with questions, edit questions, view responses</li>
+						<li><strong>Entertainment:</strong> Search YouTube videos, get video details, access playlists</li>
+					</ul>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						The assistant uses <strong>MongoDB to remember conversation context</strong>, so follow-up questions like "that meeting" or "the document I created" work naturally. It also features voice input (Web Speech API) and text-to-speech output (ElevenLabs) for hands-free interaction.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">🛠️ How we built it</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Frontend:</strong> React with a chat interface that supports voice input and audio playback</li>
+						<li><strong>Backend:</strong> Express.js server with modular service architecture</li>
+						<li><strong>AI Engine:</strong> Google Gemini 2.5 Flash with function calling to route queries to the right services</li>
+						<li><strong>Context Management:</strong> MongoDB stores conversation history, user context, and preferences to maintain continuity across sessions</li>
+						<li><strong>Google APIs Integration:</strong> 20+ service integrations including Calendar, Gmail, Drive, Docs, Sheets, Slides, Maps, Tasks, Contacts, Meet, Keep, Forms, YouTube, Places, Timezone, Weather, Air Quality, and Google Search</li>
+						<li><strong>Speech:</strong> ElevenLabs API for natural-sounding text-to-speech responses</li>
+						<li><strong>Architecture:</strong> Model Context Protocol (MCP) for structured communication between the AI and services</li>
+						<li><strong>Authentication:</strong> OAuth 2.0 for secure Google account access</li>
+					</ul>
 				</div>
 
 				<div class="grid grid-2 fade-in">
 					<div class="card">
-						<h3 style="margin-bottom: 1rem; color: var(--accent-1);">Key Highlights</h3>
+						<h3 style="margin-bottom: 1rem; color: var(--accent-1);">🏆 Accomplishments</h3>
 						<ul style="list-style: none; padding: 0;">
 							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
 								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
-								<span>Competitive hackathon environment focused on data science and ML</span>
+								<span><strong>Best Use of MongoDB Award</strong> - Recognized for innovative context management</span>
 							</li>
 							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
 								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
-								<span>Applied advanced analytics and AI techniques</span>
+								<span>Full CRUD operations across all integrated services</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Context-aware conversations powered by MongoDB</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>20+ Google service integrations successfully implemented</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Intelligent routing with Gemini function calling</span>
 							</li>
 							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
 								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
-								<span>Collaborated with talented peers on innovative solutions</span>
+								<span>Complete voice-first experience with Web Speech API and ElevenLabs</span>
 							</li>
 						</ul>
 					</div>
 
 					<div class="card">
-						<h3 style="margin-bottom: 1rem; color: var(--accent-2);">Skills Applied</h3>
-						<div class="skills-list">
-							<span class="skill-badge">Data Science</span>
-							<span class="skill-badge">Machine Learning</span>
-							<span class="skill-badge">Python</span>
-							<span class="skill-badge">Analytics</span>
-							<span class="skill-badge">Problem Solving</span>
-							<span class="skill-badge">Team Collaboration</span>
-						</div>
+						<h3 style="margin-bottom: 1rem; color: var(--accent-2);">💡 Key Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Managing 20+ Google API integrations with different authentication and rate limits</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Building robust context management system in MongoDB</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Getting Gemini to reliably choose the right tools for complex queries</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Syncing voice input/output while maintaining conversation flow</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Implementing smart caching and request batching for rate limits</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 
 				<div class="card fade-in" style="margin-top: 2rem;">
-					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">Experience & Learning</h3>
-					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
-						The TAMU Datathon provided an excellent opportunity to apply theoretical knowledge in a competitive, time-constrained environment. Working alongside other passionate data scientists and engineers, I gained valuable experience in rapid prototyping, data analysis, and presenting technical solutions. This event reinforced my interest in using data-driven approaches to solve complex problems and highlighted the importance of collaboration in technical innovation.
-					</p>
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">📚 What we learned</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Function calling with LLMs:</strong> Gemini's function calling is powerful but requires careful tool definitions and system instructions</li>
+						<li><strong>Context is king:</strong> Storing conversation history in MongoDB dramatically improved the assistant's ability to handle follow-up questions</li>
+						<li><strong>API integration patterns:</strong> Building a consistent abstraction layer across all services taught us about API design</li>
+						<li><strong>Error resilience:</strong> Building systems that degrade gracefully when services fail is crucial for user experience</li>
+						<li><strong>Voice UX challenges:</strong> Voice interfaces need different UX patterns than text—audio feedback, clear error messages, and handling interruptions</li>
+						<li><strong>MCP protocol benefits:</strong> Using a structured protocol made it easier to add new services and debug issues</li>
+						<li><strong>Rate limit management:</strong> Proactive caching and request optimization are essential when working with multiple rate-limited APIs</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">🚀 What's next for G-3</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>Enhanced NLP for more natural, conversational interactions</li>
+						<li>Multi-user support with team workspaces for collaboration</li>
+						<li>Automation workflows for custom tasks like weekly reports</li>
+						<li>Advanced calendar features with smart meeting scheduling</li>
+						<li>Full email composition capabilities with smart drafting</li>
+						<li>Direct document editing through natural language commands</li>
+						<li>Integration expansion to more Google services and third-party tools</li>
+						<li>Native mobile apps for iOS and Android</li>
+						<li>Better voice recognition with multi-language support</li>
+						<li>Analytics dashboard for productivity insights</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">React</span>
+						<span class="skill-badge">Express.js</span>
+						<span class="skill-badge">MongoDB</span>
+						<span class="skill-badge">Google Gemini AI</span>
+						<span class="skill-badge">Google APIs</span>
+						<span class="skill-badge">OAuth 2.0</span>
+						<span class="skill-badge">Web Speech API</span>
+						<span class="skill-badge">ElevenLabs API</span>
+						<span class="skill-badge">MCP Protocol</span>
+						<span class="skill-badge">Function Calling</span>
+						<span class="skill-badge">Context Management</span>
+						<span class="skill-badge">Full-Stack Development</span>
+						<span class="skill-badge">API Integration</span>
+						<span class="skill-badge">Voice Interfaces</span>
+						<span class="skill-badge">Team Collaboration</span>
+					</div>
 				</div>
 			</div>
 		</div>
