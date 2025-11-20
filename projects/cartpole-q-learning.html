@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Cartpole Q-learning | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Reinforcement learning implementation for cartpole control using Q-learning" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-4), var(--accent-5)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<path d="M12 2L2 7l10 5 10-5-10-5z"/>
+								<path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Cartpole using Q-learning</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">Reinforcement Learning Implementation for Cartpole Control</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/09.jpg" alt="Cartpole Q-learning" style="width: 100%; height: auto; display: block;" />
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-4);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						The Cartpole Q-learning project demonstrates the application of reinforcement learning to solve a classic control problem. The cartpole (inverted pendulum) is a fundamental benchmark in control theory and reinforcement learning, where an agent must learn to balance a pole on a moving cart by applying forces left or right.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						This project implements Q-learning, a value-based reinforcement learning algorithm, to train an agent that can successfully balance the pole. The implementation includes state discretization, Q-table management, exploration-exploitation strategies, and performance visualization.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4); margin-top: 1.5rem;">💡 Problem Statement</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						The cartpole problem presents several learning challenges:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Continuous State Space:</strong> Cart position, velocity, pole angle, and angular velocity are continuous</li>
+						<li><strong>Discrete Actions:</strong> Only two actions available: push left or push right</li>
+						<li><strong>Delayed Rewards:</strong> Agent receives reward only when pole stays balanced</li>
+						<li><strong>Exploration vs Exploitation:</strong> Balancing between trying new actions and using learned knowledge</li>
+						<li><strong>State Discretization:</strong> Converting continuous states to discrete Q-table indices</li>
+						<li><strong>Convergence:</strong> Ensuring the algorithm learns an optimal policy</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4); margin-top: 1.5rem;">⚡ Solution Approach</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						The project implements Q-learning with the following components:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>State Discretization:</strong> Binning continuous state variables into discrete buckets</li>
+						<li><strong>Q-Table:</strong> Multi-dimensional table storing Q-values for state-action pairs</li>
+						<li><strong>Epsilon-Greedy Policy:</strong> Exploration strategy with decaying epsilon</li>
+						<li><strong>Q-Learning Update:</strong> Temporal difference learning to update Q-values</li>
+						<li><strong>Reward Shaping:</strong> Designing reward function for effective learning</li>
+						<li><strong>Episode Management:</strong> Training over multiple episodes with reset conditions</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4); margin-top: 1.5rem;">🛠️ Technical Implementation</h3>
+					
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-5); margin-top: 1.5rem;">Q-Learning Algorithm</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>State Space:</strong> [cart_position, cart_velocity, pole_angle, pole_angular_velocity]</li>
+						<li><strong>Action Space:</strong> {0: push_left, 1: push_right}</li>
+						<li><strong>Q-Table Initialization:</strong> Random or zero initialization</li>
+						<li><strong>Q-Update Rule:</strong> Q(s,a) = Q(s,a) + α[r + γ*max(Q(s',a')) - Q(s,a)]</li>
+						<li><strong>Learning Rate (α):</strong> Controls update magnitude</li>
+						<li><strong>Discount Factor (γ):</strong> Values future rewards</li>
+						<li><strong>Epsilon Decay:</strong> Gradually reduces exploration over time</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-5); margin-top: 1.5rem;">Implementation Details</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Environment:</strong> OpenAI Gym CartPole-v1 or custom implementation</li>
+						<li><strong>State Discretization:</strong> Uniform or adaptive binning strategies</li>
+						<li><strong>Reward Function:</strong> +1 for each step pole remains balanced</li>
+						<li><strong>Episode Termination:</strong> When pole falls or max steps reached</li>
+						<li><strong>Training Loop:</strong> Multiple episodes with Q-table updates</li>
+						<li><strong>Evaluation:</strong> Testing learned policy without exploration</li>
+						<li><strong>Visualization:</strong> Plotting learning curves and episode rewards</li>
+					</ul>
+				</div>
+
+				<div class="grid grid-2 fade-in">
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-4);">🏆 Key Achievements</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Successfully learned to balance pole for extended periods</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Converged to stable policy within reasonable training time</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Demonstrated understanding of Q-learning fundamentals</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Effective state discretization strategy</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Comprehensive visualization of learning process</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-5);">💡 Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Choosing appropriate state discretization granularity</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Balancing exploration and exploitation rates</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Tuning hyperparameters (learning rate, discount factor)</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Managing Q-table memory for high-dimensional states</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Ensuring convergence to optimal policy</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4);">📚 Key Learnings</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Reinforcement Learning:</strong> Understanding the fundamentals of RL and Q-learning</li>
+						<li><strong>Markov Decision Process:</strong> Modeling problems as MDPs with states, actions, and rewards</li>
+						<li><strong>Value Functions:</strong> Learning action-value functions (Q-functions)</li>
+						<li><strong>Exploration Strategies:</strong> Epsilon-greedy and other exploration techniques</li>
+						<li><strong>State Discretization:</strong> Converting continuous to discrete state spaces</li>
+						<li><strong>Hyperparameter Tuning:</strong> Impact of learning rate, discount factor, and epsilon</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4);">🚀 Future Enhancements</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>Deep Q-Network (DQN) for handling continuous states without discretization</li>
+						<li>Double DQN and Dueling DQN for improved stability and performance</li>
+						<li>Prioritized Experience Replay for more efficient learning</li>
+						<li>Multi-agent reinforcement learning for competitive scenarios</li>
+						<li>Transfer learning to adapt to variations of the cartpole problem</li>
+						<li>Policy gradient methods (REINFORCE, Actor-Critic) for comparison</li>
+						<li>Real-world hardware implementation on physical cartpole system</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">Reinforcement Learning</span>
+						<span class="skill-badge">Q-Learning</span>
+						<span class="skill-badge">Python</span>
+						<span class="skill-badge">OpenAI Gym</span>
+						<span class="skill-badge">Markov Decision Process</span>
+						<span class="skill-badge">Control Theory</span>
+						<span class="skill-badge">Value Functions</span>
+						<span class="skill-badge">Exploration Strategies</span>
+						<span class="skill-badge">State Discretization</span>
+						<span class="skill-badge">Hyperparameter Tuning</span>
+						<span class="skill-badge">Data Visualization</span>
+						<span class="skill-badge">Algorithm Implementation</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<a href="https://github.com/Chetansai11/cartpole_Q-learning" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+						View on GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>
+

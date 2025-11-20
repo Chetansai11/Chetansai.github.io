@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Health Monitoring & Heart Stroke Prediction | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="IoT-based health monitoring system with ML prediction for heart stroke" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-1), var(--accent-3)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+								<polyline points="22 4 12 14.01 9 11.01"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Health Monitoring & Heart Stroke Prediction</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">IoT-based Health Monitoring System with ML Prediction</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/11.jpg" alt="Health Monitoring" style="width: 100%; height: auto; display: block;" />
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-1);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						The Health Monitoring and Heart Stroke Prediction system is an integrated IoT and machine learning solution for continuous health monitoring and early stroke risk detection. The system collects real-time physiological data using ESP32-based sensors, processes it through a machine learning model, and provides actionable health insights and stroke risk predictions.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						This project demonstrates the integration of embedded systems, IoT communication, data processing, and machine learning to create a practical healthcare application that can help in early detection and prevention of cardiovascular events.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1); margin-top: 1.5rem;">💡 Problem Statement</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Cardiovascular diseases and strokes are leading causes of death worldwide. Key challenges include:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Early Detection:</strong> Identifying stroke risk factors before symptoms appear</li>
+						<li><strong>Continuous Monitoring:</strong> Tracking health metrics in real-time without hospital visits</li>
+						<li><strong>Data Integration:</strong> Combining multiple physiological signals for comprehensive analysis</li>
+						<li><strong>Predictive Analytics:</strong> Using historical data to predict future health events</li>
+						<li><strong>Accessibility:</strong> Making health monitoring affordable and user-friendly</li>
+						<li><strong>Real-time Alerts:</strong> Providing immediate warnings for critical health conditions</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1); margin-top: 1.5rem;">⚡ Solution Approach</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						The system integrates multiple components:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>IoT Sensors:</strong> ESP32 with heart rate, temperature, and blood pressure sensors</li>
+						<li><strong>Data Collection:</strong> Continuous monitoring and wireless transmission to cloud/server</li>
+						<li><strong>Data Processing:</strong> Signal filtering, feature extraction, and normalization</li>
+						<li><strong>Machine Learning Model:</strong> Trained classifier for stroke risk prediction</li>
+						<li><strong>Dashboard:</strong> Web or mobile interface for visualization and alerts</li>
+						<li><strong>Alert System:</strong> Real-time notifications for abnormal readings</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1); margin-top: 1.5rem;">🛠️ Technical Implementation</h3>
+					
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Hardware Components</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>ESP32 Microcontroller:</strong> WiFi-enabled processing unit</li>
+						<li><strong>Heart Rate Sensor:</strong> Pulse oximeter or ECG sensor</li>
+						<li><strong>Temperature Sensor:</strong> Body temperature monitoring</li>
+						<li><strong>Blood Pressure Sensor:</strong> Non-invasive BP measurement</li>
+						<li><strong>Display Module:</strong> OLED or LCD for local readings</li>
+						<li><strong>Power Management:</strong> Battery or USB power supply</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Software Architecture</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Embedded Firmware:</strong> Arduino/ESP-IDF for sensor reading and WiFi communication</li>
+						<li><strong>Data Transmission:</strong> MQTT or HTTP REST API to cloud/server</li>
+						<li><strong>Backend Server:</strong> Flask/Django for data storage and processing</li>
+						<li><strong>Database:</strong> SQLite/PostgreSQL for historical data storage</li>
+						<li><strong>ML Model:</strong> Scikit-learn or TensorFlow for stroke prediction</li>
+						<li><strong>Frontend:</strong> Web dashboard or mobile app for visualization</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Machine Learning Pipeline</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Feature Engineering:</strong> Age, gender, BMI, blood pressure, heart rate, glucose, etc.</li>
+						<li><strong>Data Preprocessing:</strong> Handling missing values, outlier detection, normalization</li>
+						<li><strong>Model Selection:</strong> Random Forest, XGBoost, or Neural Networks</li>
+						<li><strong>Training:</strong> Using stroke prediction datasets (e.g., Kaggle datasets)</li>
+						<li><strong>Evaluation:</strong> Accuracy, precision, recall, F1-score, and ROC-AUC</li>
+						<li><strong>Deployment:</strong> Model serving via API for real-time predictions</li>
+					</ul>
+				</div>
+
+				<div class="grid grid-2 fade-in">
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-1);">🏆 Key Achievements</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Real-time health data collection and transmission</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>High-accuracy stroke prediction model (>85% accuracy)</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Seamless IoT integration with cloud backend</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>User-friendly dashboard for health monitoring</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-1); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Real-time alert system for critical conditions</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-3);">💡 Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Sensor calibration and noise reduction</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Reliable wireless data transmission</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Handling imbalanced datasets for stroke prediction</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Real-time model inference on embedded systems</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Data privacy and security for health information</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">📚 Key Learnings</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>IoT Development:</strong> Building end-to-end IoT systems with sensors and cloud</li>
+						<li><strong>Embedded Systems:</strong> Programming microcontrollers and sensor interfacing</li>
+						<li><strong>Healthcare ML:</strong> Applying machine learning to medical prediction tasks</li>
+						<li><strong>Data Integration:</strong> Combining multiple data sources for comprehensive analysis</li>
+						<li><strong>Real-time Systems:</strong> Processing and responding to data streams</li>
+						<li><strong>System Integration:</strong> Connecting hardware, software, and ML components</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">🚀 Future Enhancements</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>Integration with wearable devices (smartwatches, fitness trackers)</li>
+						<li>Advanced ML models with deep learning for improved accuracy</li>
+						<li>Multi-disease prediction (diabetes, hypertension, etc.)</li>
+						<li>Telemedicine integration for remote consultations</li>
+						<li>Blockchain for secure health data storage</li>
+						<li>Mobile app with push notifications and health insights</li>
+						<li>Integration with electronic health records (EHR)</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-1);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">IoT</span>
+						<span class="skill-badge">ESP32</span>
+						<span class="skill-badge">Machine Learning</span>
+						<span class="skill-badge">Python</span>
+						<span class="skill-badge">Embedded Systems</span>
+						<span class="skill-badge">Sensor Integration</span>
+						<span class="skill-badge">Arduino</span>
+						<span class="skill-badge">Scikit-learn</span>
+						<span class="skill-badge">Data Analysis</span>
+						<span class="skill-badge">Web Development</span>
+						<span class="skill-badge">MQTT</span>
+						<span class="skill-badge">Healthcare AI</span>
+						<span class="skill-badge">Signal Processing</span>
+						<span class="skill-badge">Cloud Computing</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<a href="https://github.com/Chetansai11/Health-Monitoring-and-Heart-Stroke-Prediction" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+						View on GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>
+

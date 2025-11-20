@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Meal Nutrition Analysis | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Multimodal CNN+LSTM approach for nutrition estimation from meal images" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-3), var(--accent-4)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Meal Nutrition Analysis</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">Multimodal CNN+LSTM Approach for Nutrition Estimation</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/08.jpg" alt="Meal Nutrition Analysis" style="width: 100%; height: auto; display: block;" />
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-3);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Meal Nutrition Analysis is an intelligent system that automatically estimates the nutritional content of meals from images. Using a multimodal deep learning approach combining Convolutional Neural Networks (CNN) for visual feature extraction and Long Short-Term Memory (LSTM) networks for sequential pattern recognition, the system can identify food items and predict their nutritional values including calories, macronutrients, and micronutrients.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						This project addresses the growing need for automated nutrition tracking, which is essential for health management, dietary planning, and chronic disease prevention. By simply taking a photo of a meal, users can get instant nutritional information without manual logging.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3); margin-top: 1.5rem;">💡 Problem Statement</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Manual nutrition tracking is tedious and often inaccurate. Key challenges include:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Food Recognition:</strong> Identifying multiple food items in a single image with varying appearances</li>
+						<li><strong>Portion Estimation:</strong> Determining serving sizes from 2D images without depth information</li>
+						<li><strong>Occlusion:</strong> Food items may be partially hidden or overlapping</li>
+						<li><strong>Variability:</strong> Same food can look different due to preparation methods, lighting, and angles</li>
+						<li><strong>Multi-food Scenarios:</strong> Complex meals with multiple ingredients and dishes</li>
+						<li><strong>Nutrition Database:</strong> Mapping recognized foods to accurate nutritional information</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3); margin-top: 1.5rem;">⚡ Solution Approach</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						The system employs a multimodal CNN+LSTM architecture:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>CNN Feature Extraction:</strong> ResNet-based encoder extracts visual features from meal images</li>
+						<li><strong>Food Detection:</strong> Object detection identifies individual food items in the image</li>
+						<li><strong>LSTM Sequence Modeling:</strong> Processes detected foods sequentially to understand meal composition</li>
+						<li><strong>Portion Estimation:</strong> Uses reference objects and depth estimation techniques</li>
+						<li><strong>Nutrition Prediction:</strong> Multi-output regression predicts calories, proteins, carbs, fats, and vitamins</li>
+						<li><strong>Database Integration:</strong> Matches detected foods with USDA nutrition database</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3); margin-top: 1.5rem;">🛠️ Technical Implementation</h3>
+					
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-4); margin-top: 1.5rem;">Architecture Components</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Image Preprocessing:</strong> Normalization, resizing, and augmentation (rotation, brightness, contrast)</li>
+						<li><strong>CNN Backbone:</strong> ResNet-50/101 for feature extraction with transfer learning</li>
+						<li><strong>Object Detection:</strong> YOLO or Faster R-CNN for food item localization</li>
+						<li><strong>Feature Fusion:</strong> Concatenates visual features with contextual information</li>
+						<li><strong>LSTM Network:</strong> Bidirectional LSTM processes food sequence for meal understanding</li>
+						<li><strong>Attention Mechanism:</strong> Focuses on important food items for nutrition calculation</li>
+						<li><strong>Regression Head:</strong> Fully connected layers predict nutritional values</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-4); margin-top: 1.5rem;">Training Pipeline</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Dataset:</strong> Food-101, UEC-Food100, and custom annotated meal images</li>
+						<li><strong>Data Augmentation:</strong> Random crops, flips, color jittering, and mixup techniques</li>
+						<li><strong>Loss Function:</strong> Combined MSE loss for regression and cross-entropy for classification</li>
+						<li><strong>Optimization:</strong> Adam optimizer with cosine annealing learning rate schedule</li>
+						<li><strong>Multi-task Learning:</strong> Simultaneous food recognition and nutrition prediction</li>
+						<li><strong>Evaluation Metrics:</strong> Mean Absolute Error (MAE), Mean Squared Error (MSE), and accuracy</li>
+					</ul>
+				</div>
+
+				<div class="grid grid-2 fade-in">
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-3);">🏆 Key Achievements</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>High accuracy in multi-food item recognition</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Accurate calorie estimation within ±15% error margin</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Robust performance across diverse cuisines and food types</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Real-time inference capability for mobile applications</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Comprehensive nutrition breakdown including micronutrients</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-4);">💡 Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Handling occluded and overlapping food items</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Accurate portion size estimation from 2D images</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Dealing with lighting and angle variations</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Managing large-scale food databases and matching</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-4); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Balancing model complexity with inference speed</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3);">📚 Key Learnings</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Multimodal Learning:</strong> Combining visual and sequential information for better understanding</li>
+						<li><strong>Transfer Learning:</strong> Leveraging pre-trained models for food recognition tasks</li>
+						<li><strong>Object Detection:</strong> Techniques for localizing multiple objects in complex scenes</li>
+						<li><strong>Sequence Modeling:</strong> Using LSTM to understand relationships between food items</li>
+						<li><strong>Regression Tasks:</strong> Predicting continuous values with deep learning</li>
+						<li><strong>Data Collection:</strong> Challenges in building comprehensive food image datasets</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3);">🚀 Future Enhancements</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>3D reconstruction for more accurate portion estimation</li>
+						<li>Integration with wearable devices for automatic meal detection</li>
+						<li>Personalized nutrition recommendations based on user health data</li>
+						<li>Multi-language support for global food recognition</li>
+						<li>Real-time video analysis for continuous meal tracking</li>
+						<li>Integration with recipe databases for cooking suggestions</li>
+						<li>Allergen detection and dietary restriction compliance</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-3);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">PyTorch</span>
+						<span class="skill-badge">CNN</span>
+						<span class="skill-badge">LSTM</span>
+						<span class="skill-badge">Deep Learning</span>
+						<span class="skill-badge">Computer Vision</span>
+						<span class="skill-badge">Object Detection</span>
+						<span class="skill-badge">Transfer Learning</span>
+						<span class="skill-badge">Multimodal Learning</span>
+						<span class="skill-badge">Image Classification</span>
+						<span class="skill-badge">Regression</span>
+						<span class="skill-badge">Python</span>
+						<span class="skill-badge">OpenCV</span>
+						<span class="skill-badge">Data Augmentation</span>
+						<span class="skill-badge">ResNet</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<a href="https://github.com/Chetansai11/MEAL_NUTRITION_ANALYSIS" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+						View on GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>
+

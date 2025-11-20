@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Face Tracking Robot | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="3-wheeled robot with pan-tilt mechanism and vision-based tracking" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-2), var(--accent-3)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<circle cx="12" cy="12" r="10"/>
+								<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Face Tracking Robot</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">3-Wheeled Robot with Pan-Tilt Mechanism and Vision-Based Tracking</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/12.jpg" alt="Face Tracking Robot" style="width: 100%; height: auto; display: block;" />
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-2);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						The Face Tracking Robot is an autonomous robotic system that uses computer vision to detect and track human faces in real-time. The robot features a 3-wheeled omnidirectional base for smooth movement and a pan-tilt camera mechanism for precise face tracking. Built using ROS2, the system demonstrates integration of perception, control, and actuation in a complete robotic application.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						This project showcases practical robotics skills including sensor integration, control systems, path planning, and real-time computer vision processing, making it an excellent example of end-to-end robotic system development.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2); margin-top: 1.5rem;">💡 Problem Statement</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Building an autonomous face tracking system involves several challenges:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Real-time Processing:</strong> Face detection and tracking must operate at video frame rates</li>
+						<li><strong>Robust Detection:</strong> Handling varying lighting conditions, angles, and occlusions</li>
+						<li><strong>Precise Control:</strong> Smooth and accurate pan-tilt movements to keep face centered</li>
+						<li><strong>Robot Navigation:</strong> Coordinating base movement with camera orientation</li>
+						<li><strong>System Integration:</strong> Seamless communication between vision, control, and actuation modules</li>
+						<li><strong>Latency Management:</strong> Minimizing delay between detection and robot response</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2); margin-top: 1.5rem;">⚡ Solution Approach</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						The system integrates multiple components:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Face Detection:</strong> Haar cascades or deep learning-based face detection (MTCNN/YOLO)</li>
+						<li><strong>Face Tracking:</strong> Kalman filter for predictive tracking and smooth following</li>
+						<li><strong>Pan-Tilt Control:</strong> PID controllers for precise camera positioning</li>
+						<li><strong>Robot Base Control:</strong> Differential drive or omnidirectional control for base movement</li>
+						<li><strong>ROS2 Architecture:</strong> Modular nodes for vision, control, and actuation</li>
+						<li><strong>Coordinate Transformation:</strong> Converting image coordinates to robot frame</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2); margin-top: 1.5rem;">🛠️ Technical Implementation</h3>
+					
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Hardware Components</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Robot Base:</strong> 3-wheeled omnidirectional platform with encoders</li>
+						<li><strong>Camera System:</strong> USB camera or Raspberry Pi camera module</li>
+						<li><strong>Pan-Tilt Mechanism:</strong> Two servo motors for camera orientation</li>
+						<li><strong>Computing Unit:</strong> Raspberry Pi or onboard computer for processing</li>
+						<li><strong>Motor Controllers:</strong> PWM-based control for smooth movement</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Software Architecture</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>ROS2 Nodes:</strong> Modular architecture with separate nodes for each component</li>
+						<li><strong>Vision Node:</strong> OpenCV-based face detection and tracking</li>
+						<li><strong>Control Node:</strong> PID controllers for pan-tilt and base movement</li>
+						<li><strong>Actuation Node:</strong> Motor control and servo positioning</li>
+						<li><strong>Topic Communication:</strong> Camera images, face coordinates, and control commands</li>
+						<li><strong>TF2:</strong> Coordinate frame transformations between camera and robot base</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-3); margin-top: 1.5rem;">Control Algorithms</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Face Detection:</strong> Haar cascades or deep learning models for robust detection</li>
+						<li><strong>Kalman Filtering:</strong> Predictive tracking to handle temporary occlusions</li>
+						<li><strong>PID Control:</strong> Proportional-Integral-Derivative controllers for smooth tracking</li>
+						<li><strong>Coordinate Mapping:</strong> Image pixel coordinates to pan-tilt angles</li>
+						<li><strong>Velocity Control:</strong> Smooth velocity commands for base movement</li>
+					</ul>
+				</div>
+
+				<div class="grid grid-2 fade-in">
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-2);">🏆 Key Achievements</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Real-time face tracking at 30 FPS</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Smooth and responsive pan-tilt movements</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Robust tracking under varying lighting conditions</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Successful integration of vision, control, and actuation</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-2); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Modular ROS2 architecture for easy extension</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-3);">💡 Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Synchronizing multiple control loops (pan, tilt, base)</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Handling face detection failures and occlusions</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Calibrating camera-to-robot coordinate transformations</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Optimizing PID parameters for smooth tracking</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-3); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Managing computational resources for real-time processing</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2);">📚 Key Learnings</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>ROS2 Development:</strong> Building modular robotic systems with ROS2</li>
+						<li><strong>Computer Vision:</strong> Real-time face detection and tracking techniques</li>
+						<li><strong>Control Systems:</strong> PID control implementation for robotic applications</li>
+						<li><strong>Robotic Integration:</strong> Combining perception, planning, and actuation</li>
+						<li><strong>Coordinate Systems:</strong> Understanding and managing multiple reference frames</li>
+						<li><strong>Real-time Systems:</strong> Optimizing for low-latency performance</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2);">🚀 Future Enhancements</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>Multi-face tracking and person re-identification</li>
+						<li>Deep learning-based face recognition for personalized interaction</li>
+						<li>Autonomous navigation to follow a person</li>
+						<li>Gesture recognition for human-robot interaction</li>
+						<li>Integration with SLAM for mapping and navigation</li>
+						<li>Voice commands for hands-free control</li>
+						<li>Mobile app for remote monitoring and control</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-2);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">Robotics</span>
+						<span class="skill-badge">ROS2</span>
+						<span class="skill-badge">OpenCV</span>
+						<span class="skill-badge">Computer Vision</span>
+						<span class="skill-badge">Control Systems</span>
+						<span class="skill-badge">PID Control</span>
+						<span class="skill-badge">Face Detection</span>
+						<span class="skill-badge">Kalman Filter</span>
+						<span class="skill-badge">Python</span>
+						<span class="skill-badge">C++</span>
+						<span class="skill-badge">Embedded Systems</span>
+						<span class="skill-badge">Sensor Integration</span>
+						<span class="skill-badge">Real-time Systems</span>
+						<span class="skill-badge">Motor Control</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<a href="https://github.com/Chetansai11/Face-Tracking-Robot" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+						View on GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>
+

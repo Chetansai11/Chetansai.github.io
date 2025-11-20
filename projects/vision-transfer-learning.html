@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vision Transfer Learning | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="DeiT-based image classification with augmentation and fine-tuning" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-5), var(--accent-6)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<path d="M12 2L2 7l10 5 10-5-10-5z"/>
+								<path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Vision Transfer Learning</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">DeiT-based Image Classification with Augmentation and Fine-tuning</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/10.jpg" alt="Vision Transfer Learning" style="width: 100%; height: auto; display: block;" />
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-5);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						This project explores the application of Data-efficient Image Transformers (DeiT) for image classification tasks using transfer learning. DeiT represents a breakthrough in vision transformers, achieving competitive performance with CNNs while requiring less data and computational resources. The project demonstrates how to effectively fine-tune pre-trained transformer models for custom classification tasks.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						By leveraging transfer learning with DeiT, we can achieve state-of-the-art results on image classification tasks with limited training data, making it particularly valuable for domain-specific applications where large datasets are not available.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5); margin-top: 1.5rem;">💡 Problem Statement</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Traditional deep learning approaches face several challenges:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Data Requirements:</strong> Training vision models from scratch requires massive datasets</li>
+						<li><strong>Computational Cost:</strong> Training large models is resource-intensive and time-consuming</li>
+						<li><strong>Domain Adaptation:</strong> Models trained on general datasets may not perform well on specific domains</li>
+						<li><strong>Limited Data Scenarios:</strong> Many real-world applications have limited labeled data</li>
+						<li><strong>Model Efficiency:</strong> Balancing accuracy with model size and inference speed</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5); margin-top: 1.5rem;">⚡ Solution Approach</h3>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+						The project implements DeiT-based transfer learning:
+					</p>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Pre-trained DeiT Models:</strong> Leverage models trained on ImageNet with knowledge distillation</li>
+						<li><strong>Fine-tuning Strategy:</strong> Progressive unfreezing and differential learning rates</li>
+						<li><strong>Data Augmentation:</strong> Advanced augmentation techniques including MixUp, CutMix, and RandAugment</li>
+						<li><strong>Knowledge Distillation:</strong> Utilize teacher-student training paradigm for better performance</li>
+						<li><strong>Adaptive Fine-tuning:</strong> Layer-wise learning rate scheduling for optimal adaptation</li>
+						<li><strong>Ensemble Methods:</strong> Combine multiple models for improved robustness</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5); margin-top: 1.5rem;">🛠️ Technical Implementation</h3>
+					
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-6); margin-top: 1.5rem;">DeiT Architecture</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Vision Transformer:</strong> Patch-based image processing with self-attention mechanisms</li>
+						<li><strong>Distillation Token:</strong> Learnable token that distills knowledge from teacher CNN</li>
+						<li><strong>Multi-head Attention:</strong> Captures long-range dependencies in images</li>
+						<li><strong>Position Embeddings:</strong> Encodes spatial information for patch sequences</li>
+						<li><strong>Classification Head:</strong> MLP for final class predictions</li>
+					</ul>
+
+					<h4 style="margin-bottom: 0.75rem; color: var(--accent-6); margin-top: 1.5rem;">Training Pipeline</h4>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Data Preparation:</strong> Image preprocessing, normalization, and dataset splitting</li>
+						<li><strong>Augmentation:</strong> RandAugment, MixUp, CutMix, and AutoAugment strategies</li>
+						<li><strong>Transfer Learning:</strong> Load pre-trained weights and adapt to target domain</li>
+						<li><strong>Fine-tuning:</strong> Two-stage training with frozen and unfrozen layers</li>
+						<li><strong>Optimization:</strong> AdamW optimizer with cosine annealing schedule</li>
+						<li><strong>Regularization:</strong> Dropout, weight decay, and label smoothing</li>
+						<li><strong>Evaluation:</strong> Top-1 and Top-5 accuracy, confusion matrix, and per-class metrics</li>
+					</ul>
+				</div>
+
+				<div class="grid grid-2 fade-in">
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-5);">🏆 Key Achievements</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>State-of-the-art accuracy on custom datasets with limited data</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Efficient training with reduced computational requirements</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Robust performance across diverse image classification tasks</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Successful domain adaptation from ImageNet to target domains</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-5); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Comprehensive comparison with CNN-based transfer learning</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3 style="margin-bottom: 1rem; color: var(--accent-6);">💡 Challenges Overcome</h3>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-6); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Adapting transformer architecture for small datasets</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-6); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Optimizing hyperparameters for fine-tuning</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-6); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Managing memory constraints during training</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-6); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Preventing overfitting with limited data</span>
+							</li>
+							<li style="padding: 0.75rem 0; color: var(--text-secondary); display: flex; align-items: start; gap: 0.75rem;">
+								<span style="color: var(--accent-6); font-weight: 600; flex-shrink: 0;">●</span>
+								<span>Balancing model complexity and inference speed</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5);">📚 Key Learnings</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Vision Transformers:</strong> Understanding how transformers work for image classification</li>
+						<li><strong>Transfer Learning:</strong> Best practices for adapting pre-trained models to new tasks</li>
+						<li><strong>Data Augmentation:</strong> Advanced techniques for improving model generalization</li>
+						<li><strong>Knowledge Distillation:</strong> Using teacher-student training for model compression</li>
+						<li><strong>Fine-tuning Strategies:</strong> Layer-wise learning rates and progressive unfreezing</li>
+						<li><strong>Model Comparison:</strong> Evaluating transformer vs CNN architectures</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5);">🚀 Future Enhancements</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li>Exploring newer vision transformer architectures (Swin, PVT, etc.)</li>
+						<li>Multi-task learning for simultaneous classification and localization</li>
+						<li>Few-shot learning capabilities for rapid domain adaptation</li>
+						<li>Model compression techniques for edge deployment</li>
+						<li>Attention visualization for model interpretability</li>
+						<li>Active learning strategies for efficient data collection</li>
+						<li>Federated learning for privacy-preserving training</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-5);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">Transformers</span>
+						<span class="skill-badge">DeiT</span>
+						<span class="skill-badge">Transfer Learning</span>
+						<span class="skill-badge">PyTorch</span>
+						<span class="skill-badge">Vision Transformers</span>
+						<span class="skill-badge">Image Classification</span>
+						<span class="skill-badge">Fine-tuning</span>
+						<span class="skill-badge">Data Augmentation</span>
+						<span class="skill-badge">Knowledge Distillation</span>
+						<span class="skill-badge">Deep Learning</span>
+						<span class="skill-badge">Computer Vision</span>
+						<span class="skill-badge">Python</span>
+						<span class="skill-badge">Self-Attention</span>
+						<span class="skill-badge">Model Optimization</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<a href="https://github.com/Chetansai11/DeiT_based_Image_Classification" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+						View on GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>
+
