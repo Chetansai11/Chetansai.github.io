@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Autonomous Navigation with RRT* and A* | Chetan Sai Borra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="ROS 2 autonomous navigation pipeline with A* and RRT* path planning for motion planning and control" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<div class="nav-container">
+			<a href="../index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../education.html">Education</a></li>
+				<li><a href="../experience.html">Experience</a></li>
+				<li><a href="../skills.html">Skills</a></li>
+				<li><a href="../projects.html" class="active">Projects</a></li>
+				<li><a href="../contact.html">Contact Me</a></li>
+			</ul>
+			<div style="display: flex; align-items: center;">
+				<button class="theme-toggle" aria-label="Toggle theme">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+				</button>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div style="margin-bottom: 3rem;">
+				<a href="../projects.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="15 18 9 12 15 6"/>
+					</svg>
+					Back to Projects
+				</a>
+				<div class="section-header fade-in" style="text-align: left;">
+					<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-4), var(--accent-5)); width: 80px; height: 80px;">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<circle cx="12" cy="12" r="3"/>
+								<path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+								<path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+							</svg>
+						</div>
+						<div>
+							<h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Autonomous Navigation with RRT* and A* Path Planning in ROS 2</h1>
+							<p style="color: var(--text-secondary); font-size: 1.125rem;">Motion Planning, Autonomous Navigation — State Estimation, Global Planning, Control</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content fade-in">
+				<div class="card" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+					<img src="../images/thumbs/04.jpg" alt="Autonomous Navigation" style="width: 100%; height: auto; display: block;" />
+					<!-- Replace with project-specific image when available -->
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h2 style="margin-bottom: 1.5rem; color: var(--accent-4);">📋 Project Overview</h2>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+						Architected a ROS 2 autonomous navigation pipeline with clear separation between state estimation (pose), global planning, and control, enabling modular testing and parameter tuning.
+					</p>
+					<p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8;">
+						Implemented A* on an inflated occupancy grid for baseline optimal planning and RRT* for continuous-space, sampling-based motion planning in cluttered environments. Developed a pure-pursuit path tracking controller with lookahead distance, proportional gains, and velocity saturation, validating performance via planned vs. executed trajectory analysis in RViz.
+					</p>
+				</div>
+
+				<div class="card fade-in" style="margin-bottom: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4); margin-top: 1.5rem;">⚡ Key Highlights</h3>
+					<ul style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+						<li><strong>Modular Architecture:</strong> State estimation, global planning, and control cleanly separated</li>
+						<li><strong>A* Planner:</strong> Optimal path planning on inflated occupancy grid</li>
+						<li><strong>RRT* Planner:</strong> Sampling-based motion planning for cluttered environments</li>
+						<li><strong>Pure-Pursuit Controller:</strong> Lookahead distance, proportional gains, velocity saturation</li>
+						<li><strong>Validation:</strong> Planned vs. executed trajectory comparison in RViz</li>
+					</ul>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem;">
+					<h3 style="margin-bottom: 1rem; color: var(--accent-4);">Skills Demonstrated</h3>
+					<div class="skills-list">
+						<span class="skill-badge">ROS 2</span>
+						<span class="skill-badge">A*</span>
+						<span class="skill-badge">RRT*</span>
+						<span class="skill-badge">Motion Planning</span>
+						<span class="skill-badge">Pure-Pursuit</span>
+						<span class="skill-badge">Occupancy Grid</span>
+						<span class="skill-badge">RViz</span>
+						<span class="skill-badge">Autonomous Navigation</span>
+						<span class="skill-badge">Path Planning</span>
+					</div>
+				</div>
+
+				<div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+					<p style="color: var(--text-secondary); margin-bottom: 1rem;">More details and images coming soon.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
+		<ul class="footer-links">
+			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
+			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
+			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/page-transitions.js"></script>
+</body>
+</html>

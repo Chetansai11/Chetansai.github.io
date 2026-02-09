@@ -45,9 +45,128 @@
 				<p>End-to-end projects: research and deployed prototypes</p>
 			</div>
 
-			<div class="grid grid-3 fade-in">
-				<!-- Project 1 -->
-				<a href="projects/brain-tumor-segmentation.html" class="project-card">
+			<!-- Filter Buttons -->
+			<div class="project-filters fade-in" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+				<button class="filter-btn active" data-filter="all">All Projects</button>
+				<button class="filter-btn" data-filter="ml-ai">🤖 ML/AI Engineer</button>
+				<button class="filter-btn" data-filter="robotics">🔧 Robotics</button>
+			</div>
+
+			<div class="grid grid-3 fade-in" id="projects-grid">
+				<!-- Telecom KPI Anomaly Detection -->
+				<a href="projects/telecom-kpi-anomaly-detection.html" class="project-card" data-category="ml-ai">
+					<img src="images/thumbs/01.jpg" alt="Telecom KPI Anomaly Detection" class="project-image" />
+					<div class="project-content">
+						<h3>Telecom KPI Anomaly Detection Using AI Agents</h3>
+						<p>Multi-agent AI system with LangGraph, MCP, and anomaly detection for real-time KPI monitoring across 100+ sites.</p>
+						<div class="project-tags">
+							<span class="tag">LangGraph</span>
+							<span class="tag">MCP</span>
+							<span class="tag">LLMs</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Image-to-Video Generation -->
+				<a href="projects/image-to-video-generation.html" class="project-card" data-category="ml-ai">
+					<img src="images/thumbs/02.jpg" alt="Image-to-Video Generation" class="project-image" />
+					<div class="project-content">
+						<h3>Image-to-Video Generation of Anime/Comics</h3>
+						<p>3D latent video diffusion model with 71.8% SSIM improvement over baseline interpolation.</p>
+						<div class="project-tags">
+							<span class="tag">Video Diffusion</span>
+							<span class="tag">RIFE</span>
+							<span class="tag">PyTorch</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- RAG YouTube Long-Form QA -->
+				<a href="projects/rag-youtube-long-form-qa.html" class="project-card" data-category="ml-ai">
+					<img src="images/thumbs/03.jpg" alt="RAG YouTube Long-Form QA" class="project-image" />
+					<div class="project-content">
+						<h3>Retrieval Augmented Generation from YouTube for Long-Form QA</h3>
+						<p>RAG pipeline transforming video data into searchable knowledge bases with LangChain and LLMs.</p>
+						<div class="project-tags">
+							<span class="tag">LangChain</span>
+							<span class="tag">RAG</span>
+							<span class="tag">LLMs</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Meal Nutrition Analysis -->
+				<a href="projects/meal-nutrition-analysis.html" class="project-card" data-category="ml-ai">
+					<img src="images/thumbs/08.jpg" alt="Meal Nutrition Analysis" class="project-image" />
+					<div class="project-content">
+						<h3>Meal Nutrition Analysis via Multi-Modal Deep Learning</h3>
+						<p>CNNs, LSTMs, and demographic embeddings—34% accuracy boost over benchmarks.</p>
+						<div class="project-tags">
+							<span class="tag">PyTorch</span>
+							<span class="tag">CNN</span>
+							<span class="tag">LSTM</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Autonomous Navigation -->
+				<a href="projects/autonomous-navigation-rrt-astar.html" class="project-card" data-category="robotics">
+					<img src="images/thumbs/04.jpg" alt="Autonomous Navigation" class="project-image" />
+					<div class="project-content">
+						<h3>Autonomous Navigation with RRT* and A* Path Planning in ROS 2</h3>
+						<p>Motion planning pipeline with A*, RRT*, and pure-pursuit control.</p>
+						<div class="project-tags">
+							<span class="tag">ROS 2</span>
+							<span class="tag">A*</span>
+							<span class="tag">RRT*</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- LiDAR Human Detection -->
+				<a href="projects/lidar-human-detection-tracking.html" class="project-card" data-category="robotics">
+					<img src="images/thumbs/05.jpg" alt="LiDAR Human Detection" class="project-image" />
+					<div class="project-content">
+						<h3>LiDAR-Based Human Detection and Multi-Target Tracking</h3>
+						<p>2D LiDAR perception pipeline with clustering and multi-object tracking in ROS 2.</p>
+						<div class="project-tags">
+							<span class="tag">ROS 2</span>
+							<span class="tag">LiDAR</span>
+							<span class="tag">Tracking</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Robust RL Mixed Autonomy -->
+				<a href="projects/robust-rl-mixed-autonomy-traffic.html" class="project-card" data-category="ml-ai">
+					<img src="images/thumbs/06.jpg" alt="Robust RL Mixed Autonomy Traffic" class="project-image" />
+					<div class="project-content">
+						<h3>Robust RL for Mixed Autonomy Traffic Systems</h3>
+						<p>PPO and TRPO agents with 20% throughput increase and zero safety violations.</p>
+						<div class="project-tags">
+							<span class="tag">PPO</span>
+							<span class="tag">TRPO</span>
+							<span class="tag">SUMO</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Face Tracking Robot -->
+				<a href="projects/face-tracking-robot.html" class="project-card" data-category="robotics">
+					<img src="images/thumbs/12.jpg" alt="Face Tracking Robot" class="project-image" />
+					<div class="project-content">
+						<h3>Face Tracking Robot</h3>
+						<p>4-wheeled mobile base with computer vision for real-time face detection and person following.</p>
+						<div class="project-tags">
+							<span class="tag">Computer Vision</span>
+							<span class="tag">Arduino</span>
+							<span class="tag">Robotics</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Brain Tumor Segmentation -->
+				<a href="projects/brain-tumor-segmentation.html" class="project-card" data-category="ml-ai">
 					<img src="images/thumbs/07.jpg" alt="Brain Tumor Segmentation" class="project-image" />
 					<div class="project-content">
 						<h3>Brain Tumor Segmentation</h3>
@@ -60,22 +179,8 @@
 					</div>
 				</a>
 
-				<!-- Project 2 -->
-				<a href="projects/meal-nutrition-analysis.html" class="project-card">
-					<img src="images/thumbs/08.jpg" alt="Meal Nutrition Analysis" class="project-image" />
-					<div class="project-content">
-						<h3>Meal Nutrition Analysis</h3>
-						<p>Multimodal CNN+LSTM approach for nutrition estimation.</p>
-						<div class="project-tags">
-							<span class="tag">PyTorch</span>
-							<span class="tag">CNN</span>
-							<span class="tag">LSTM</span>
-						</div>
-					</div>
-				</a>
-
-				<!-- Project 3 -->
-				<a href="projects/vision-transfer-learning.html" class="project-card">
+				<!-- Vision Transfer Learning -->
+				<a href="projects/vision-transfer-learning.html" class="project-card" data-category="ml-ai">
 					<img src="images/thumbs/10.jpg" alt="Vision Transfer Learning" class="project-image" />
 					<div class="project-content">
 						<h3>Vision Transfer Learning</h3>
@@ -88,22 +193,8 @@
 					</div>
 				</a>
 
-				<!-- Project 4 -->
-				<a href="projects/face-tracking-robot.html" class="project-card">
-					<img src="images/thumbs/12.jpg" alt="Face Tracking Robot" class="project-image" />
-					<div class="project-content">
-						<h3>Face Tracking Robot</h3>
-						<p>3-wheeled robot with pan-tilt mechanism and vision-based tracking.</p>
-						<div class="project-tags">
-							<span class="tag">Robotics</span>
-							<span class="tag">OpenCV</span>
-							<span class="tag">ROS2</span>
-						</div>
-					</div>
-				</a>
-
-				<!-- Project 5 -->
-				<a href="projects/cartpole-q-learning.html" class="project-card">
+				<!-- Cartpole Q-learning -->
+				<a href="projects/cartpole-q-learning.html" class="project-card" data-category="ml-ai">
 					<img src="images/thumbs/09.jpg" alt="Cartpole Q-learning" class="project-image" />
 					<div class="project-content">
 						<h3>Cartpole using Q-learning</h3>
@@ -116,8 +207,8 @@
 					</div>
 				</a>
 
-				<!-- Project 6 -->
-				<a href="projects/health-monitoring.html" class="project-card">
+				<!-- Health Monitoring -->
+				<a href="projects/health-monitoring.html" class="project-card" data-category="ml-ai">
 					<img src="images/thumbs/11.jpg" alt="Health Monitoring" class="project-image" />
 					<div class="project-content">
 						<h3>Health Monitoring & Heart Stroke Prediction</h3>
@@ -153,6 +244,7 @@
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/navigation.js"></script>
 	<script src="assets/js/page-transitions.js"></script>
+	<script src="assets/js/project-filters.js"></script>
 </body>
 </html>
 

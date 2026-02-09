@@ -45,10 +45,57 @@
 				<p>Technologies and tools I work with</p>
 			</div>
 
-			<div class="fade-in">
-				<!-- AI Engineer Skills -->
-				<div class="card mb-2">
-					<h3 style="margin-bottom: 1.5rem; color: var(--accent-1);">🤖 AI Engineer</h3>
+			<!-- Top Skills Section -->
+			<div class="top-skills-section fade-in">
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">Python</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 95%;"></div>
+					</div>
+					<div class="skill-proficiency">Expert</div>
+				</div>
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">PyTorch</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 90%;"></div>
+					</div>
+					<div class="skill-proficiency">Advanced</div>
+				</div>
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">ROS 2</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 88%;"></div>
+					</div>
+					<div class="skill-proficiency">Advanced</div>
+				</div>
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">Computer Vision</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 92%;"></div>
+					</div>
+					<div class="skill-proficiency">Expert</div>
+				</div>
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">Deep Learning</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 90%;"></div>
+					</div>
+					<div class="skill-proficiency">Advanced</div>
+				</div>
+				<div class="top-skill-card">
+					<h3 style="color: var(--accent-1); margin-bottom: 0.5rem;">C++</h3>
+					<div class="skill-progress-bar">
+						<div class="skill-progress-fill" style="width: 85%;"></div>
+					</div>
+					<div class="skill-proficiency">Advanced</div>
+				</div>
+			</div>
+
+			<!-- Skills by Category -->
+			<div class="fade-in" id="skills-container">
+				<!-- ML/AI Engineer Skills -->
+				<div class="card mb-2 skill-category" data-skill-category="ml-ai">
+					<h3 style="margin-bottom: 1.5rem; color: var(--accent-1);">🤖 ML/AI Engineer</h3>
 					<div class="skills-list">
 						<span class="skill-badge">Python</span>
 						<span class="skill-badge">PyTorch</span>
@@ -64,30 +111,40 @@
 						<span class="skill-badge">Transformers</span>
 						<span class="skill-badge">BERT</span>
 						<span class="skill-badge">GPT</span>
+						<span class="skill-badge">LLMs</span>
+						<span class="skill-badge">LangChain</span>
+						<span class="skill-badge">RAG</span>
 						<span class="skill-badge">Vision Transformers</span>
 						<span class="skill-badge">Computer Vision</span>
+						<span class="skill-badge">OpenCV</span>
 						<span class="skill-badge">NLP</span>
 						<span class="skill-badge">Natural Language Processing</span>
 						<span class="skill-badge">Reinforcement Learning</span>
 						<span class="skill-badge">Q-Learning</span>
 						<span class="skill-badge">DQN</span>
+						<span class="skill-badge">PPO</span>
+						<span class="skill-badge">TRPO</span>
 						<span class="skill-badge">Transfer Learning</span>
 						<span class="skill-badge">Fine-tuning</span>
 						<span class="skill-badge">Hugging Face</span>
 						<span class="skill-badge">OpenAI API</span>
 						<span class="skill-badge">Model Deployment</span>
 						<span class="skill-badge">MLOps</span>
+						<span class="skill-badge">Docker</span>
 						<span class="skill-badge">Model Optimization</span>
 						<span class="skill-badge">Hyperparameter Tuning</span>
 						<span class="skill-badge">Feature Engineering</span>
 						<span class="skill-badge">Ensemble Methods</span>
 						<span class="skill-badge">AutoML</span>
+						<span class="skill-badge">Anomaly Detection</span>
+						<span class="skill-badge">Time Series</span>
+						<span class="skill-badge">ARIMA</span>
 					</div>
 				</div>
 
 				<!-- Robotics Engineer Skills -->
-				<div class="card mb-2">
-					<h3 style="margin-bottom: 1.5rem; color: var(--accent-2);">🤖 Robotics Engineer</h3>
+				<div class="card mb-2 skill-category" data-skill-category="robotics">
+					<h3 style="margin-bottom: 1.5rem; color: var(--accent-2);">🔧 Robotics Engineer</h3>
 					<div class="skills-list">
 						<span class="skill-badge">ROS2</span>
 						<span class="skill-badge">ROS</span>
@@ -100,6 +157,7 @@
 						<span class="skill-badge">Path Planning</span>
 						<span class="skill-badge">A* Algorithm</span>
 						<span class="skill-badge">RRT</span>
+						<span class="skill-badge">RRT*</span>
 						<span class="skill-badge">SLAM</span>
 						<span class="skill-badge">Kinematics</span>
 						<span class="skill-badge">Forward Kinematics</span>
@@ -114,6 +172,7 @@
 						<span class="skill-badge">OpenCV</span>
 						<span class="skill-badge">Object Detection</span>
 						<span class="skill-badge">Tracking</span>
+						<span class="skill-badge">Multi-Target Tracking</span>
 						<span class="skill-badge">C++</span>
 						<span class="skill-badge">Python</span>
 						<span class="skill-badge">Embedded Systems</span>
@@ -123,12 +182,13 @@
 						<span class="skill-badge">Sensor Fusion</span>
 						<span class="skill-badge">Kalman Filter</span>
 						<span class="skill-badge">Motion Planning</span>
+						<span class="skill-badge">Pure-Pursuit</span>
 						<span class="skill-badge">Robot Operating System</span>
 					</div>
 				</div>
 
 				<!-- Data Scientist Skills -->
-				<div class="card mb-2">
+				<div class="card mb-2 skill-category" data-skill-category="ml-ai">
 					<h3 style="margin-bottom: 1.5rem; color: var(--accent-3);">📊 Data Scientist</h3>
 					<div class="skills-list">
 						<span class="skill-badge">Python</span>
@@ -172,7 +232,7 @@
 				</div>
 
 				<!-- Programming Languages & Tools -->
-				<div class="card mb-2">
+				<div class="card mb-2 skill-category" data-skill-category="all">
 					<h3 style="margin-bottom: 1.5rem; color: var(--accent-4);">💻 Programming & Tools</h3>
 					<div class="skills-list">
 						<span class="skill-badge">Python</span>
@@ -201,33 +261,6 @@
 						<span class="skill-badge">Cloud Computing</span>
 					</div>
 				</div>
-
-				<!-- Additional Skills -->
-				<div class="card">
-					<h3 style="margin-bottom: 1.5rem; color: var(--accent-5);">🔧 Additional Skills</h3>
-					<div class="skills-list">
-						<span class="skill-badge">IoT</span>
-						<span class="skill-badge">ESP32</span>
-						<span class="skill-badge">Arduino</span>
-						<span class="skill-badge">Raspberry Pi</span>
-						<span class="skill-badge">Embedded Systems</span>
-						<span class="skill-badge">Signal Processing</span>
-						<span class="skill-badge">Image Processing</span>
-						<span class="skill-badge">Medical Imaging</span>
-						<span class="skill-badge">Healthcare AI</span>
-						<span class="skill-badge">Data Analysis</span>
-						<span class="skill-badge">Statistical Modeling</span>
-						<span class="skill-badge">Optimization</span>
-						<span class="skill-badge">Linear Algebra</span>
-						<span class="skill-badge">Calculus</span>
-						<span class="skill-badge">Probability</span>
-						<span class="skill-badge">Statistics</span>
-						<span class="skill-badge">Research</span>
-						<span class="skill-badge">Problem Solving</span>
-						<span class="skill-badge">Algorithm Design</span>
-						<span class="skill-badge">Data Structures</span>
-					</div>
-				</div>
 			</div>
 		</div>
 	</main>
@@ -248,6 +281,7 @@
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/navigation.js"></script>
 	<script src="assets/js/page-transitions.js"></script>
+	<script src="assets/js/skills-filter.js"></script>
+	<script src="assets/js/skills-graph.js"></script>
 </body>
 </html>
-
