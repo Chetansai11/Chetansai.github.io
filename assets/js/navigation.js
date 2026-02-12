@@ -1,10 +1,18 @@
-// Navigation Functionality
+// Navigation Functionality - sticky nav with scroll state
 (function() {
 	const mobileToggle = document.querySelector('.mobile-menu-toggle');
+	const nav = document.querySelector('nav');
 	const navLinks = document.querySelector('.nav-links');
 	const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 	
-	// Set active link
+	// Sticky nav: add .scrolled for stronger shadow when not at top
+	function updateNavScroll() {
+		if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
+	}
+	window.addEventListener('scroll', updateNavScroll, { passive: true });
+	updateNavScroll();
+	
+	// Set active link by current page
 	document.querySelectorAll('.nav-links a').forEach(link => {
 		const href = link.getAttribute('href');
 		if (href === currentPage || (currentPage === '' && href === 'index.html')) {

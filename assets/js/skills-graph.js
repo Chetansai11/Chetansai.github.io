@@ -1,9 +1,9 @@
 // Skills Web Graph Visualization
 document.addEventListener('DOMContentLoaded', function() {
 	const canvas = document.getElementById('skills-canvas');
-	if (!canvas) return;
-
 	const container = document.getElementById('skills-graph');
+	if (!canvas || !container) return;
+
 	const ctx = canvas.getContext('2d');
 	
 	// Set canvas size
