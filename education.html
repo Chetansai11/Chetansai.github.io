@@ -1,141 +1,295 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-	<title>Chetan Sai Borra | Education</title>
+	<title>Education | Chetan Sai Borra</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Chetan Sai Borra - Education, Academic Journey, and Research Experience" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Theme switcher script immediately in head -->
+	<script src="assets/js/theme-toggle.js"></script>
 </head>
-<body>
+<body class="bg-dark-bg text-text-primary font-sans min-h-screen relative overflow-x-hidden bg-grid-pattern transition-colors duration-300">
+
+	<!-- Ambient glow effects -->
+	<div class="absolute top-[15%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow"></div>
+	<div class="absolute bottom-[20%] left-[5%] w-[40vw] h-[40vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow" style="animation-delay: 1.5s;"></div>
 
 	<!-- Navigation -->
-	<nav>
-		<div class="nav-container">
-			<a href="index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="education.html" class="active">Education</a></li>
-				<li><a href="experience.html">Experience</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact Me</a></li>
+	<nav class="sticky top-0 z-50 glass-panel border-b border-dark-border backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold tracking-tight text-gradient-maroon">
+				Chetan Sai Borra
+			</a>
+			
+			<ul class="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
+				<li><a href="index.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Home</a></li>
+				<li><a href="education.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Education</a></li>
+				<li><a href="experience.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Experience</a></li>
+				<li><a href="skills.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Skills</a></li>
+				<li><a href="projects.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Projects</a></li>
+				<li><a href="contact.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Contact</a></li>
 			</ul>
-			<div style="display: flex; align-items: center;">
-				<button class="theme-toggle" aria-label="Toggle theme">
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+
+			<!-- Header CTA & Theme Toggle -->
+			<div class="hidden md:flex items-center gap-4">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border hover:border-maroon-900/30 transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically by script -->
 				</button>
-				<button class="mobile-menu-toggle" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
+				<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="px-4 py-2 rounded-lg text-sm font-medium bg-maroon-900 hover:bg-maroon-800 text-white transition-all flex items-center gap-2">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="7 10 12 15 17 10"/>
+						<line x1="12" y1="15" x2="12" y2="3"/>
+					</svg>
+					Resume
+				</a>
+			</div>
+
+			<!-- Mobile Theme toggle and Menu Button -->
+			<div class="flex items-center gap-2 md:hidden">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically -->
+				</button>
+				<button class="mobile-menu-toggle p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label="Toggle menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="4" y1="12" x2="20" y2="12"></line>
+						<line x1="4" y1="6" x2="20" y2="6"></line>
+						<line x1="4" y1="18" x2="20" y2="18"></line>
+					</svg>
 				</button>
 			</div>
+		</div>
+
+		<!-- Mobile Menu Panel -->
+		<div class="mobile-menu hidden md:hidden glass-panel border-b border-dark-border px-6 py-6 absolute top-full left-0 w-full flex flex-col gap-4">
+			<a href="index.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Home</a>
+			<a href="education.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Education</a>
+			<a href="experience.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Experience</a>
+			<a href="skills.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Skills</a>
+			<a href="projects.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Projects</a>
+			<a href="contact.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Contact</a>
+			<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="mt-4 px-4 py-3 rounded-xl text-center font-medium bg-maroon-900 text-white flex items-center justify-center gap-2">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				Resume
+			</a>
 		</div>
 	</nav>
 
 	<!-- Main Content -->
-	<main>
-		<div class="container">
-			<div class="section-header fade-in">
-				<h2>Education</h2>
-				<p>Academic journey and achievements</p>
+	<main class="max-w-6xl mx-auto px-6 py-12 md:py-16 flex flex-col gap-16 relative z-10">
+
+		<!-- Header -->
+		<div class="flex flex-col gap-2">
+			<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Academic Path</span>
+			<h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gradient-maroon">Education</h1>
+			<p class="text-text-secondary text-sm sm:text-base max-w-xl">Deepening theoretical foundations and engineering systems for machine learning and robotics.</p>
+		</div>
+
+		<!-- Degrees Section -->
+		<section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<!-- Texas A&M University -->
+			<div class="glass-panel rounded-2xl flex flex-col overflow-hidden hover:border-maroon-800/40 transition-colors duration-300 bento-glow group">
+				<div class="h-48 overflow-hidden relative bg-dark-card">
+					<img src="images/thumbs/01.jpg" alt="Texas A&M University Campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800'">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-85"></div>
+					<div class="absolute bottom-4 left-6">
+						<span class="px-2.5 py-1 rounded-full text-xs font-bold bg-maroon-900/80 text-maroon-300 border border-maroon-800/50">Texas A&M University</span>
+					</div>
+				</div>
+				<div class="p-6 sm:p-8 flex flex-col gap-6">
+					<div>
+						<h2 class="text-xl font-bold tracking-tight text-text-primary">Master of Science in Computer Engineering</h2>
+						<div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mt-2">
+							<span class="font-medium text-text-primary">GPA: 4.0 / 4.0</span>
+							<span>•</span>
+							<span>Focus: Machine Learning, Computer Vision & Robotics</span>
+							<span>•</span>
+							<span>Class of 2026</span>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="text-sm font-semibold text-text-primary border-b border-dark-border pb-2 mb-3">Relevant Coursework</h3>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-text-secondary">
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> CSCE-633 Machine Learning
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> ECEN-649 Pattern Recognition
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> CSCE-635 AI Robotics
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> CSCE-753 CV & Robot Perception
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> ECEN-743 Reinforcement Learning
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> CSCE-735 Parallel Computing
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> CSCE-752 Spatial Intelligence
+							</div>
+							<div class="flex items-center gap-2 py-1 border-b border-dark-border">
+								<span class="w-1.5 h-1.5 rounded-full bg-maroon-500"></span> ECEN-758 Data Mining & Analysis
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="grid grid-2 fade-in">
-				<div class="card">
-					<img src="images/thumbs/01.jpg" alt="Texas A&M University" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); margin-bottom: 1.5rem;" />
-					<h3 style="margin-bottom: 0.75rem; color: var(--accent-1);">Texas A&M University</h3>
-					<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Master of Science in Computer Engineering</p>
-					<p style="font-weight: 600; margin-bottom: 0.5rem;">GPA: 4.0/4.0</p>
-					<p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Focus: Machine Learning, Computer Vision, and Robotics</p>
+			<!-- Vellore Institute of Technology -->
+			<div class="glass-panel rounded-2xl flex flex-col overflow-hidden hover:border-maroon-800/40 transition-colors duration-300 bento-glow group">
+				<div class="h-48 overflow-hidden relative bg-dark-card">
+					<img src="images/thumbs/02.jpg" alt="VIT Campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800'">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-85"></div>
+					<div class="absolute bottom-4 left-6">
+						<span class="px-2.5 py-1 rounded-full text-xs font-bold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">Vellore Institute of Technology</span>
+					</div>
+				</div>
+				<div class="p-6 sm:p-8 flex flex-col gap-6 flex-1 justify-between">
 					<div>
-						<h4 style="margin-bottom: 0.75rem; color: var(--text-primary);">Relevant Coursework:</h4>
-						<ul style="list-style: none; padding: 0;">
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">CSCE-633 Machine Learning</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">ECEN-649 Pattern Recognition</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">CSCE-635 AI Robotics</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">CSCE-753 Computer Vision & Robot Perception</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">ECEN-743 Reinforcement Learning</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">CSCE-735 Parallel Computing</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary); border-bottom: 1px solid var(--border);">CSCE-752 Robotics & Spatial Intelligence</li>
-							<li style="padding: 0.5rem 0; color: var(--text-secondary);">ECEN-758 Data Mining & Analysis</li>
-						</ul>
+						<h2 class="text-xl font-bold tracking-tight text-text-primary">Bachelor of Technology in Electronics and Communication Engineering</h2>
+						<div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mt-2">
+							<span class="font-medium text-text-primary">GPA: 9.02 / 10.0</span>
+							<span>•</span>
+							<span>Vellore, India</span>
+							<span>•</span>
+							<span>Class of 2024</span>
+						</div>
+					</div>
+
+					<p class="text-sm text-text-secondary leading-relaxed">
+						Strong academic foundation in software architectures, embedded hardware design, signal processing, and numerical optimizations. Actively bridged systems theory with software engineering.
+					</p>
+
+					<div class="flex items-center gap-2 text-xs text-text-secondary font-medium pt-4 border-t border-dark-border">
+						<span>Key Modules: Control Theory, Embedded Systems, Python Programming, DSP</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Research Experience Section -->
+		<section class="flex flex-col gap-8">
+			<div class="flex flex-col gap-1">
+				<h2 class="text-2xl font-bold tracking-tight text-gradient-maroon">Academic & Research Experience</h2>
+				<p class="text-text-secondary text-sm">Translating academic models into functional aerospace and medical prototypes</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<!-- Research Assistant at VIT -->
+				<div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:border-maroon-800/40 transition-colors group">
+					<div class="h-44 w-full rounded-xl overflow-hidden border border-dark-border bg-dark-card">
+						<img src="images/thumbs/07.jpg" alt="Medical segmentation analysis" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800'">
+					</div>
+					<div>
+						<h3 class="text-lg font-bold text-text-primary">Research Assistant</h3>
+						<p class="text-xs text-maroon-700 dark:text-maroon-400 font-semibold mt-0.5">Vellore Institute of Technology · Dec 2023 – May 2024</p>
+						<p class="text-sm text-text-secondary mt-3 leading-relaxed">
+							Led an exploration on deep convolutional networks for medical imagery. Developed and optimized W-Net architectures to segment brain tumor sub-regions inside MRI volumes, accomplishing 90%+ accuracy and 72% Mean IOU on the BraTS dataset.
+						</p>
 					</div>
 				</div>
 
-				<div class="card">
-					<img src="images/thumbs/02.jpg" alt="Vellore Institute of Technology" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); margin-bottom: 1.5rem;" />
-					<h3 style="margin-bottom: 0.75rem; color: var(--accent-2);">Vellore Institute of Technology</h3>
-					<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Bachelor of Technology in Electronics and Communication Engineering</p>
-					<p style="font-weight: 600; margin-bottom: 1.5rem;">GPA: 9.02/10.0</p>
-					<p style="color: var(--text-secondary);">Strong foundation in programming, systems design, and AI-driven solutions. Dedicated to bridging theory with real-world applications to drive innovation.</p>
+				<!-- Research Intern at DRDL -->
+				<div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:border-maroon-800/40 transition-colors group">
+					<div class="h-44 w-full rounded-xl overflow-hidden border border-dark-border bg-dark-card">
+						<img src="images/thumbs/13.png" alt="Simulation graph" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800'">
+					</div>
+					<div>
+						<h3 class="text-lg font-bold text-text-primary">Research Intern</h3>
+						<p class="text-xs text-maroon-700 dark:text-maroon-400 font-semibold mt-0.5">Defence Research & Development Laboratory (DRDL) · May 2023 – Jul 2023</p>
+						<p class="text-sm text-text-secondary mt-3 leading-relaxed">
+							Simulated high-stability control laws for aerospace applications. Formulated aircraft pitch control matrices using PID networks in MATLAB/Simulink, introducing numerical fine-tuning parameters to improve stability thresholds by 11%.
+						</p>
+					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- Research Experience -->
-			<div class="section-header mt-3 fade-in">
-				<h2>Research Experience</h2>
-				<p>Contributions to academic research</p>
+		<!-- Certifications Section -->
+		<section class="flex flex-col gap-8">
+			<div class="flex flex-col gap-1">
+				<h2 class="text-2xl font-bold tracking-tight text-gradient-maroon">Certifications</h2>
+				<p class="text-text-secondary text-sm">Professional specializations in core AI, cloud architecture, and algorithms</p>
 			</div>
 
-			<div class="grid grid-2 fade-in">
-				<div class="card">
-					<img src="images/thumbs/07.jpg" alt="Research Assistant" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); margin-bottom: 1.5rem;" />
-					<h3 style="margin-bottom: 0.5rem; color: var(--accent-3);">Research Assistant</h3>
-					<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem;">Vellore Institute of Technology</p>
-					<p style="color: var(--text-secondary);">Worked on Brain Tumor Segmentation with W-Net and Deep Neural Networks. Developed advanced segmentation models for medical imaging applications.</p>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				<!-- Certification Card: Azure Cert -->
+				<div class="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-maroon-800/40 transition-colors bg-gradient-to-br from-blue-500/5 via-transparent to-transparent">
+					<div class="w-16 h-16 flex-shrink-0 flex items-center justify-center p-1">
+						<img src="images/events/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure AI Apps and Agents Developer Associate Badge" class="w-full h-full object-contain">
+					</div>
+					<div class="flex-1 min-w-0">
+						<h3 class="font-bold text-sm text-text-primary truncate" title="Microsoft Certified: Azure AI Apps and Agents Developer Associate">Azure AI Apps & Agents Dev</h3>
+						<p class="text-xs text-text-secondary mt-0.5 truncate">Microsoft Credentials Hub</p>
+						<a href="https://learn.microsoft.com/api/credentials/share/en-us/BorraChetanSai-6605/2B0CF492EDC8CB54?sharingId=DF321D7720A08C1A" target="_blank" class="inline-block text-[10px] font-bold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider mt-1.5">Verify Credential ↗</a>
+					</div>
 				</div>
 
-				<div class="card">
-					<img src="images/thumbs/13.png" alt="Research Intern" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); margin-bottom: 1.5rem;" />
-					<h3 style="margin-bottom: 0.5rem; color: var(--accent-4);">Research Intern</h3>
-					<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem;">Defence Research & Development Laboratory (DRDL)</p>
-					<p style="color: var(--text-secondary);">Formulated and simulated an advanced aircraft pitch control system utilizing PID controllers in MATLAB and Simulink, achieving a 10% improvement in system stability.</p>
+				<!-- Cert 1 -->
+				<div class="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-maroon-800/40 transition-colors">
+					<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-zinc-900/10 dark:bg-zinc-950 border border-dark-border p-1 flex items-center justify-center">
+						<img src="images/thumbs/14.png" alt="Stanford Cert" class="w-full h-full object-contain" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=200'">
+					</div>
+					<div class="flex-1 min-w-0">
+						<h3 class="font-bold text-sm text-text-primary truncate">Supervised Machine Learning</h3>
+						<p class="text-xs text-text-secondary mt-0.5 truncate">Stanford & DeepLearning.AI</p>
+						<span class="inline-block text-[10px] font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider mt-1.5">Regression & Classification</span>
+					</div>
+				</div>
+
+				<!-- Cert 2 -->
+				<div class="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-maroon-800/40 transition-colors">
+					<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-zinc-900/10 dark:bg-zinc-950 border border-dark-border p-1 flex items-center justify-center">
+						<img src="images/thumbs/15.png" alt="Stanford Cert 2" class="w-full h-full object-contain" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=200'">
+					</div>
+					<div class="flex-1 min-w-0">
+						<h3 class="font-bold text-sm text-text-primary truncate">Advanced Learning Algorithms</h3>
+						<p class="text-xs text-text-secondary mt-0.5 truncate">Stanford & DeepLearning.AI</p>
+						<span class="inline-block text-[10px] font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider mt-1.5">Neural Networks & Trees</span>
+					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- Certifications -->
-			<div class="section-header mt-3 fade-in">
-				<h2>Certifications</h2>
-				<p>Professional certifications and courses</p>
-			</div>
-
-			<div class="grid grid-2 fade-in">
-				<div class="card">
-					<img src="images/thumbs/14.png" alt="Supervised Machine Learning" style="width: 100%; height: 200px; object-fit: contain; border-radius: var(--radius); margin-bottom: 1.5rem; background: var(--bg-secondary);" />
-					<h3 style="margin-bottom: 0.5rem; color: var(--accent-5);">Supervised Machine Learning</h3>
-					<p style="color: var(--text-secondary);">DeepLearning.AI and Stanford University</p>
-				</div>
-
-				<div class="card">
-					<img src="images/thumbs/15.png" alt="Advanced Learning Algorithms" style="width: 100%; height: 200px; object-fit: contain; border-radius: var(--radius); margin-bottom: 1.5rem; background: var(--bg-secondary);" />
-					<h3 style="margin-bottom: 0.5rem; color: var(--accent-6);">Advanced Learning Algorithms</h3>
-					<p style="color: var(--text-secondary);">DeepLearning.AI and Stanford University</p>
-				</div>
-			</div>
-		</div>
 	</main>
 
 	<!-- Footer -->
-	<footer>
-		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
-		<ul class="footer-links">
-			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
-			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
-			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
-		</ul>
+	<footer class="border-t border-dark-border py-8 mt-16 relative z-10 bg-zinc-950/60 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+			<p>&copy; 2026 Chetan Sai Borra. All rights reserved.</p>
+			<ul class="flex items-center gap-6 font-medium">
+				<li><a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="hover:text-text-primary transition-colors">LinkedIn</a></li>
+				<li><a href="https://github.com/Chetansai11" target="_blank" class="hover:text-text-primary transition-colors">GitHub</a></li>
+				<li><a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="hover:text-text-primary transition-colors">Instagram</a></li>
+				<li><a href="mailto:sai311235@gmail.com" class="hover:text-text-primary transition-colors">Email</a></li>
+			</ul>
+		</div>
 	</footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/theme.js"></script>
-	<script src="assets/js/navigation.js"></script>
-	<script src="assets/js/page-transitions.js"></script>
+	<!-- Navigation scripts -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const menuBtn = document.querySelector('.mobile-menu-toggle');
+			const menu = document.querySelector('.mobile-menu');
+			if (menuBtn && menu) {
+				menuBtn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+				});
+			}
+		});
+	</script>
 </body>
 </html>
-

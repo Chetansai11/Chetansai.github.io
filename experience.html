@@ -1,149 +1,276 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-	<title>Chetan Sai Borra | Experience</title>
+	<title>Experience | Chetan Sai Borra</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Chetan Sai Borra - Professional Experience in Research and Development" />
+	<meta name="description" content="Chetan Sai Borra - Professional and Research Experience Timeline" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Theme switcher script immediately in head -->
+	<script src="assets/js/theme-toggle.js"></script>
 </head>
-<body>
+<body class="bg-dark-bg text-text-primary font-sans min-h-screen relative overflow-x-hidden bg-grid-pattern transition-colors duration-300">
+
+	<!-- Ambient glow effects -->
+	<div class="absolute top-[20%] left-[5%] w-[40vw] h-[40vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow"></div>
+	<div class="absolute bottom-[10%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow" style="animation-delay: 1.5s;"></div>
 
 	<!-- Navigation -->
-	<nav>
-		<div class="nav-container">
-			<a href="index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="education.html">Education</a></li>
-				<li><a href="experience.html" class="active">Experience</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact Me</a></li>
+	<nav class="sticky top-0 z-50 glass-panel border-b border-dark-border backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold tracking-tight text-gradient-maroon">
+				Chetan Sai Borra
+			</a>
+			
+			<ul class="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
+				<li><a href="index.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Home</a></li>
+				<li><a href="education.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Education</a></li>
+				<li><a href="experience.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Experience</a></li>
+				<li><a href="skills.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Skills</a></li>
+				<li><a href="projects.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Projects</a></li>
+				<li><a href="contact.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Contact</a></li>
 			</ul>
-			<div style="display: flex; align-items: center;">
-				<button class="theme-toggle" aria-label="Toggle theme">
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+
+			<!-- Header CTA & Theme Toggle -->
+			<div class="hidden md:flex items-center gap-4">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border hover:border-maroon-900/30 transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically by script -->
 				</button>
-				<button class="mobile-menu-toggle" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
+				<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="px-4 py-2 rounded-lg text-sm font-medium bg-maroon-900 hover:bg-maroon-800 text-white transition-all flex items-center gap-2">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="7 10 12 15 17 10"/>
+						<line x1="12" y1="15" x2="12" y2="3"/>
+					</svg>
+					Resume
+				</a>
+			</div>
+
+			<!-- Mobile Theme toggle and Menu Button -->
+			<div class="flex items-center gap-2 md:hidden">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically -->
+				</button>
+				<button class="mobile-menu-toggle p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label="Toggle menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="4" y1="12" x2="20" y2="12"></line>
+						<line x1="4" y1="6" x2="20" y2="6"></line>
+						<line x1="4" y1="18" x2="20" y2="18"></line>
+					</svg>
 				</button>
 			</div>
+		</div>
+
+		<!-- Mobile Menu Panel -->
+		<div class="mobile-menu hidden md:hidden glass-panel border-b border-dark-border px-6 py-6 absolute top-full left-0 w-full flex flex-col gap-4">
+			<a href="index.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Home</a>
+			<a href="education.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Education</a>
+			<a href="experience.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Experience</a>
+			<a href="skills.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Skills</a>
+			<a href="projects.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Projects</a>
+			<a href="contact.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Contact</a>
+			<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="mt-4 px-4 py-3 rounded-xl text-center font-medium bg-maroon-900 text-white flex items-center justify-center gap-2">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				Resume
+			</a>
 		</div>
 	</nav>
 
 	<!-- Main Content -->
-	<main>
-		<div class="container">
-			<div class="section-header fade-in">
-				<h2>Professional Experience</h2>
-				<p>Research, development, and innovation</p>
-			</div>
+	<main class="max-w-6xl mx-auto px-6 py-12 md:py-16 flex flex-col gap-16 relative z-10">
 
-			<div class="timeline fade-in">
-				<div class="timeline-item">
-					<div class="timeline-dot"></div>
-					<div class="card">
-						<div style="display: flex; align-items: start; gap: var(--space-6); margin-bottom: 0;">
-							<div class="timeline-logo"><span class="timeline-logo-placeholder">TAMU</span></div>
-							<div style="flex: 1;">
-								<h3 style="margin-bottom: var(--space-1); color: var(--accent);">ML Engineer – Student</h3>
-								<p style="font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-1);">Utilities and Energy Services, Texas A&M University</p>
-								<p style="color: var(--text-muted); font-size: 0.875rem;">Feb 2025 – Present · College Station, TX</p>
-							</div>
-						</div>
-						<ul>
-							<li>Designed scalable time-series ML pipelines using Python, Pandas, and SQL to automate anomaly detection and forecasting across 200+ operational systems, reducing fault response latency by 40%.</li>
-							<li>Developed and deployed deep learning and statistical models (Isolation Forests, ARIMA) for real-time monitoring, achieving 95% anomaly precision in production environments.</li>
-							<li>Built end-to-end ETL and data preprocessing workflows integrating IoT sensor streams and historical datasets, enabling predictive maintenance and operational diagnostics.</li>
-							<li>Containerized ML services using Docker, deployed modular inference pipelines, and optimized SQL-Python validation layers for production reliability.</li>
-							<li>Collaborated with engineers and stakeholders to document results, communicate findings, and support data-driven decision-making in safety-critical infrastructure.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="timeline-item">
-					<div class="timeline-dot"></div>
-					<div class="card">
-						<div style="display: flex; align-items: start; gap: var(--space-6); margin-bottom: 0;">
-							<div class="timeline-logo"><span class="timeline-logo-placeholder">VIT</span></div>
-							<div style="flex: 1;">
-								<h3 style="margin-bottom: var(--space-1); color: var(--accent);">Research Assistant</h3>
-								<p style="font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-1);">Vellore Institute of Technology</p>
-								<p style="color: var(--text-muted); font-size: 0.875rem;">Dec 2023 – May 2024 · Vellore, India</p>
-							</div>
-						</div>
-						<ul>
-							<li>Engineered W-Net and U-Net architectures for brain tumor segmentation in MRI images, accomplishing over 90% accuracy and amplifying delineation of tumor regions in BraTS 2020 Dataset.</li>
-							<li>Optimized tumor boundary detection, attaining a high Mean Intersection Over Union (Mean IOU of 72%) and Dice Score.</li>
-							<li>Experimented with models including VGG16, Res-Net, and Dense-Net blocks to evaluate performance and refine segmentation accuracy.</li>
-							<li>Implemented techniques for model evaluation and parameter tuning, streamlining computational efficiency and ensuring robust segmentation outcomes across diverse datasets.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="timeline-item">
-					<div class="timeline-dot"></div>
-					<div class="card">
-						<div style="display: flex; align-items: start; gap: var(--space-6); margin-bottom: 0;">
-							<div class="timeline-logo"><span class="timeline-logo-placeholder">DRDL</span></div>
-							<div style="flex: 1;">
-								<h3 style="margin-bottom: var(--space-1); color: var(--accent);">Research Intern</h3>
-								<p style="font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-1);">Defence Research & Development Laboratory (DRDL)</p>
-								<p style="color: var(--text-muted); font-size: 0.875rem;">May 2023 – Jul 2023 · Hyderabad, India</p>
-							</div>
-						</div>
-						<ul>
-							<li>Formulated and simulated an advanced aircraft pitch control system utilizing PID controllers in MATLAB and Simulink, leveraging machine learning techniques to advance control precision and achieve an 11% improvement in system stability.</li>
-							<li>Deployed optimization strategies to refine system dynamics, effectively reducing overshot by 10% and improving overall response time by 10%.</li>
-							<li>Collaborated closely with Shri. Murali Mohan Gade (Scientist 'F', DOS, DRDL) on control design, advancing intelligent control strategies for aerospace systems and robotics.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="timeline-item">
-					<div class="timeline-dot"></div>
-					<div class="card">
-						<div style="display: flex; align-items: start; gap: var(--space-6); margin-bottom: 0;">
-							<div class="timeline-logo"><span class="timeline-logo-placeholder">IEEE</span></div>
-							<div style="flex: 1;">
-								<h3 style="margin-bottom: var(--space-1); color: var(--accent);">Co-Secretary</h3>
-								<p style="font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-1);">IEEE MTTS [Microwave Theory and Techniques Society]</p>
-								<p style="color: var(--text-muted); font-size: 0.875rem;">Jan 2023 – Dec 2023 · Vellore, India</p>
-							</div>
-						</div>
-						<ul>
-							<li>Led as Co-Secretary of IEEE MTTS, managing and coordinating multiple events and seminars focused on emerging technologies.</li>
-							<li>Directed efforts to enhance chapter's outreach and impact through effective event planning and execution.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<!-- Header -->
+		<div class="flex flex-col gap-2">
+			<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Professional History</span>
+			<h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gradient-maroon">Experience</h1>
+			<p class="text-text-secondary text-sm sm:text-base max-w-xl">Designing algorithms, optimizing data pipelines, and building production-grade intelligence.</p>
 		</div>
+
+		<!-- Timeline Section -->
+		<section class="relative max-w-4xl">
+			<!-- Timeline central vertical line -->
+			<div class="absolute left-4 sm:left-1/2 top-2 bottom-2 w-0.5 bg-gradient-to-b from-maroon-900 via-dark-border to-zinc-950 pointer-events-none transform -translate-x-1/2 hidden sm:block"></div>
+			<div class="absolute left-6 top-2 bottom-2 w-0.5 bg-gradient-to-b from-maroon-900 via-dark-border to-zinc-950 pointer-events-none transform -translate-x-1/2 sm:hidden"></div>
+
+			<div class="flex flex-col gap-12">
+
+				<!-- Experience Item 1: ML Engineer – Student -->
+				<div class="relative flex flex-col sm:flex-row items-stretch gap-8 group">
+					<!-- Timeline Dot (Desktop) -->
+					<div class="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-maroon-900 border-2 border-maroon-500 shadow-md shadow-maroon-900/50 transform -translate-x-1/2 z-20 group-hover:scale-125 transition-transform duration-300 hidden sm:block"></div>
+					<!-- Timeline Dot (Mobile) -->
+					<div class="absolute left-6 top-6 w-4 h-4 rounded-full bg-maroon-900 border-2 border-maroon-500 shadow-md shadow-maroon-900/50 transform -translate-x-1/2 z-20 group-hover:scale-125 transition-transform duration-300 sm:hidden"></div>
+
+					<!-- Left: Content or Spacer -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8 flex flex-col items-start sm:items-end text-left sm:text-right">
+						<span class="text-xs font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider">Feb 2025 – Present</span>
+						<h3 class="text-lg font-bold text-text-primary mt-1">ML Engineer – Student</h3>
+						<p class="text-sm font-semibold text-text-secondary">Utilities and Energy Services, Texas A&M University</p>
+						<p class="text-xs text-text-secondary mt-1">College Station, TX</p>
+					</div>
+
+					<!-- Right: Detail Card -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-8">
+						<div class="glass-panel p-6 rounded-2xl border border-dark-border hover:border-maroon-800/40 transition-colors duration-300 relative">
+							<ul class="list-none text-xs sm:text-sm text-text-secondary flex flex-col gap-3">
+								<li class="flex gap-2">
+									<span class="text-maroon-500 flex-shrink-0">•</span>
+									<span>Designed scalable time-series ML pipelines using Python, Pandas, and SQL to automate anomaly detection and forecasting across 200+ operational systems, reducing fault response latency by 40%.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-maroon-500 flex-shrink-0">•</span>
+									<span>Developed and deployed deep learning and statistical models (Isolation Forests, ARIMA) for real-time monitoring, achieving 95% anomaly precision in production.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-maroon-500 flex-shrink-0">•</span>
+									<span>Built end-to-end ETL and preprocessing streams integrating IoT streams and historical datasets, enabling predictive diagnostics.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-maroon-500 flex-shrink-0">•</span>
+									<span>Containerized ML services with Docker, deploying modular inference engines and optimizing SQL-Python validation layers.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Experience Item 2: Research Assistant -->
+				<div class="relative flex flex-col sm:flex-row-reverse items-stretch gap-8 group">
+					<!-- Timeline Dot -->
+					<div class="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 hidden sm:block"></div>
+					<div class="absolute left-6 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 sm:hidden"></div>
+
+					<!-- Left: Content or Spacer -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-8 flex flex-col items-start text-left">
+						<span class="text-xs font-semibold text-text-secondary uppercase tracking-wider">Dec 2023 – May 2024</span>
+						<h3 class="text-lg font-bold text-text-primary mt-1">Research Assistant</h3>
+						<p class="text-sm font-semibold text-text-secondary">Vellore Institute of Technology</p>
+						<p class="text-xs text-text-secondary mt-1">Vellore, India</p>
+					</div>
+
+					<!-- Right: Detail Card -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8">
+						<div class="glass-panel p-6 rounded-2xl border border-dark-border hover:border-maroon-800/40 transition-colors duration-300 relative">
+							<ul class="list-none text-xs sm:text-sm text-text-secondary flex flex-col gap-3">
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Engineered W-Net and U-Net architectures for brain tumor segmentation in MRI images, accomplishing 90%+ accuracy and amplifying boundary delineation on the BraTS dataset.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Optimized edge boundary segmentation thresholds, achieving a Dice Score and Mean Intersection Over Union (Mean IOU of 72%).</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Benchmark performance grids utilizing VGG16, ResNet, and DenseNet blocks to refine segmentation outputs.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Experience Item 3: Research Intern -->
+				<div class="relative flex flex-col sm:flex-row items-stretch gap-8 group">
+					<!-- Timeline Dot -->
+					<div class="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 hidden sm:block"></div>
+					<div class="absolute left-6 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 sm:hidden"></div>
+
+					<!-- Left: Content or Spacer -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8 flex flex-col items-start sm:items-end text-left sm:text-right">
+						<span class="text-xs font-semibold text-text-secondary uppercase tracking-wider">May 2023 – Jul 2023</span>
+						<h3 class="text-lg font-bold text-text-primary mt-1">Research Intern</h3>
+						<p class="text-sm font-semibold text-text-secondary">Defence Research & Development Laboratory (DRDL)</p>
+						<p class="text-xs text-text-secondary mt-1">Hyderabad, India</p>
+					</div>
+
+					<!-- Right: Detail Card -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-8">
+						<div class="glass-panel p-6 rounded-2xl border border-dark-border hover:border-maroon-800/40 transition-colors duration-300 relative">
+							<ul class="list-none text-xs sm:text-sm text-text-secondary flex flex-col gap-3">
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Formulated and simulated an advanced aircraft pitch control system utilizing PID controllers in MATLAB and Simulink, leveraging ML models to refine control thresholds and improve stability by 11%.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Deployed parameter tuning scripts, reducing dynamic overshoot by 10% and improving control response times.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Collaborated with Senior Scientists at DOS/DRDL on intelligent robotic and flight control laws.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Experience Item 4: Co-Secretary -->
+				<div class="relative flex flex-col sm:flex-row-reverse items-stretch gap-8 group">
+					<!-- Timeline Dot -->
+					<div class="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 hidden sm:block"></div>
+					<div class="absolute left-6 top-6 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-500 shadow-md z-20 group-hover:scale-125 transition-transform duration-300 sm:hidden"></div>
+
+					<!-- Left: Content or Spacer -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-8 flex flex-col items-start text-left">
+						<span class="text-xs font-semibold text-text-secondary uppercase tracking-wider">Jan 2023 – Dec 2023</span>
+						<h3 class="text-lg font-bold text-text-primary mt-1">Co-Secretary</h3>
+						<p class="text-sm font-semibold text-text-secondary">IEEE Microwave Theory & Techniques Society</p>
+						<p class="text-xs text-text-secondary mt-1">Vellore, India</p>
+					</div>
+
+					<!-- Right: Detail Card -->
+					<div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8">
+						<div class="glass-panel p-6 rounded-2xl border border-dark-border hover:border-maroon-800/40 transition-colors duration-300 relative">
+							<ul class="list-none text-xs sm:text-sm text-text-secondary flex flex-col gap-3">
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Managed chapter operations, technical events, and guest seminars on microwave components and emerging systems.</span>
+								</li>
+								<li class="flex gap-2">
+									<span class="text-zinc-600 flex-shrink-0">•</span>
+									<span>Coordinated inter-college seminars, increasing membership and student engagement by 20%.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
 	</main>
 
 	<!-- Footer -->
-	<footer>
-		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
-		<ul class="footer-links">
-			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
-			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
-			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
-		</ul>
+	<footer class="border-t border-dark-border py-8 mt-16 relative z-10 bg-zinc-950/60 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+			<p>&copy; 2026 Chetan Sai Borra. All rights reserved.</p>
+			<ul class="flex items-center gap-6 font-medium">
+				<li><a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="hover:text-text-primary transition-colors">LinkedIn</a></li>
+				<li><a href="https://github.com/Chetansai11" target="_blank" class="hover:text-text-primary transition-colors">GitHub</a></li>
+				<li><a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="hover:text-text-primary transition-colors">Instagram</a></li>
+				<li><a href="mailto:sai311235@gmail.com" class="hover:text-text-primary transition-colors">Email</a></li>
+			</ul>
+		</div>
 	</footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/theme.js"></script>
-	<script src="assets/js/navigation.js"></script>
-	<script src="assets/js/page-transitions.js"></script>
+	<!-- Nav toggle script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const menuBtn = document.querySelector('.mobile-menu-toggle');
+			const menu = document.querySelector('.mobile-menu');
+			if (menuBtn && menu) {
+				menuBtn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+				});
+			}
+		});
+	</script>
 </body>
 </html>
-

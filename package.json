@@ -1,0 +1,14 @@
+{
+  "name": "website-ps",
+  "version": "1.0.0",
+  "description": "Portfolio website redesign using Tailwind CSS v4",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/main.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

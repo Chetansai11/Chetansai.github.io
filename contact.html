@@ -1,81 +1,217 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-	<title>Chetan Sai Borra | Contact</title>
+	<title>Contact | Chetan Sai Borra</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Chetan Sai Borra - Contact Details and Professional Profile Links" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Theme switcher script immediately in head -->
+	<script src="assets/js/theme-toggle.js"></script>
 </head>
-<body>
+<body class="bg-dark-bg text-text-primary font-sans min-h-screen relative overflow-x-hidden bg-grid-pattern transition-colors duration-300">
+
+	<!-- Ambient glow effects -->
+	<div class="absolute top-[10%] left-[20%] w-[35vw] h-[35vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow"></div>
+	<div class="absolute bottom-[10%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow" style="animation-delay: 1.5s;"></div>
 
 	<!-- Navigation -->
-	<nav>
-		<div class="nav-container">
-			<a href="index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="education.html">Education</a></li>
-				<li><a href="experience.html">Experience</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html" class="active">Contact Me</a></li>
+	<nav class="sticky top-0 z-50 glass-panel border-b border-dark-border backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold tracking-tight text-gradient-maroon">
+				Chetan Sai Borra
+			</a>
+			
+			<ul class="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
+				<li><a href="index.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Home</a></li>
+				<li><a href="education.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Education</a></li>
+				<li><a href="experience.html" class="hover:text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Experience</a></li>
+				<li><a href="skills.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Skills</a></li>
+				<li><a href="projects.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Projects</a></li>
+				<li><a href="contact.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Contact</a></li>
 			</ul>
-			<div style="display: flex; align-items: center;">
-				<button class="theme-toggle" aria-label="Toggle theme">
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+
+			<!-- Header CTA & Theme Toggle -->
+			<div class="hidden md:flex items-center gap-4">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border hover:border-maroon-900/30 transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically by script -->
 				</button>
-				<button class="mobile-menu-toggle" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
+				<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="px-4 py-2 rounded-lg text-sm font-medium bg-maroon-900 hover:bg-maroon-800 text-white transition-all flex items-center gap-2">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="7 10 12 15 17 10"/>
+						<line x1="12" y1="15" x2="12" y2="3"/>
+					</svg>
+					Resume
+				</a>
+			</div>
+
+			<!-- Mobile Theme toggle and Menu Button -->
+			<div class="flex items-center gap-2 md:hidden">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically -->
+				</button>
+				<button class="mobile-menu-toggle p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label="Toggle menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="4" y1="12" x2="20" y2="12"></line>
+						<line x1="4" y1="6" x2="20" y2="6"></line>
+						<line x1="4" y1="18" x2="20" y2="18"></line>
+					</svg>
 				</button>
 			</div>
+		</div>
+
+		<!-- Mobile Menu Panel -->
+		<div class="mobile-menu hidden md:hidden glass-panel border-b border-dark-border px-6 py-6 absolute top-full left-0 w-full flex flex-col gap-4">
+			<a href="index.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Home</a>
+			<a href="education.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Education</a>
+			<a href="experience.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Experience</a>
+			<a href="skills.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Skills</a>
+			<a href="projects.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Projects</a>
+			<a href="contact.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Contact</a>
+			<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="mt-4 px-4 py-3 rounded-xl text-center font-medium bg-maroon-900 text-white flex items-center justify-center gap-2">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				Resume
+			</a>
 		</div>
 	</nav>
 
 	<!-- Main Content -->
-	<main>
-		<div class="container">
-			<div class="contact-cta fade-in">
-				<h2>Get in Touch</h2>
-				<p>Open to internships and full-time roles. I’d love to hear about opportunities—email is the fastest way to reach me.</p>
-				<a href="mailto:sai311235@gmail.com" class="btn">Email me — sai311235@gmail.com</a>
-				<div class="contact-cta-links">
-					<a href="tel:9795759026">979-575-9026</a>
-					<span aria-hidden="true">·</span>
-					<a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" rel="noopener">LinkedIn</a>
-					<span aria-hidden="true">·</span>
-					<a href="https://github.com/Chetansai11" target="_blank" rel="noopener">GitHub</a>
-					<span aria-hidden="true">·</span>
-					<a href="https://www.instagram.com/chetan_sai_47/" target="_blank" rel="noopener">Instagram</a>
+	<main class="max-w-4xl mx-auto px-6 py-12 md:py-20 flex flex-col gap-12 relative z-10">
+
+		<!-- Header -->
+		<div class="flex flex-col gap-2 items-center text-center">
+			<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Connect</span>
+			<h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gradient-maroon">Get In Touch</h1>
+			<p class="text-text-secondary text-sm sm:text-base max-w-lg">I am open to internships and full-time opportunities. Reach out using any platform below.</p>
+		</div>
+
+		<!-- Card options grid -->
+		<section class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+			
+			<!-- Direct Email Card -->
+			<div class="glass-panel p-8 rounded-3xl flex flex-col items-center justify-between text-center gap-6 group hover:border-maroon-800/40 transition-all duration-300">
+				<div class="w-16 h-16 rounded-2xl bg-maroon-900/10 border border-maroon-900/20 flex items-center justify-center text-maroon-700 dark:text-maroon-300 text-2xl group-hover:scale-110 transition-all">
+					✉️
 				</div>
-				<div style="margin-top: var(--space-8);">
-					<a href="images/Chetan_Sai_Borra_comprehesive.pdf" target="_blank" class="btn btn-ghost">Download Resume (PDF)</a>
+				<div class="flex flex-col gap-1">
+					<h3 class="font-bold text-lg text-text-primary">Send an Email</h3>
+					<p class="text-xs text-text-secondary leading-relaxed max-w-[200px] mx-auto">Generally responds within 24 hours.</p>
+				</div>
+				<div class="flex flex-col gap-2 w-full">
+					<a href="mailto:sai311235@gmail.com" class="w-full px-4 py-2.5 rounded-xl text-xs font-semibold bg-maroon-900 hover:bg-maroon-800 text-white transition-colors">
+						Open mail client
+					</a>
+					<button onclick="navigator.clipboard.writeText('sai311235@gmail.com'); alert('Email copied!');" class="w-full px-4 py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 text-text-primary border border-dark-border transition-colors">
+						Copy email address
+					</button>
 				</div>
 			</div>
+
+			<!-- Phone Call Card -->
+			<div class="glass-panel p-8 rounded-3xl flex flex-col items-center justify-between text-center gap-6 group hover:border-maroon-800/40 transition-all duration-300">
+				<div class="w-16 h-16 rounded-2xl bg-zinc-900/10 border border-dark-border flex items-center justify-center text-zinc-500 text-2xl group-hover:scale-110 transition-all">
+					📞
+				</div>
+				<div class="flex flex-col gap-1">
+					<h3 class="font-bold text-lg text-text-primary">Phone Call</h3>
+					<p class="text-xs text-text-secondary leading-relaxed max-w-[200px] mx-auto">For direct inquiries.</p>
+				</div>
+				<div class="flex flex-col gap-2 w-full">
+					<a href="tel:9795759026" class="w-full px-4 py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 text-text-primary border border-dark-border transition-colors">
+						Call 979-575-9026
+					</a>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Horizontal Divider / Or row -->
+		<div class="relative flex py-4 items-center">
+			<div class="flex-grow border-t border-dark-border"></div>
+			<span class="flex-shrink mx-4 text-xs font-semibold text-text-secondary uppercase tracking-widest">Find me on</span>
+			<div class="flex-grow border-t border-dark-border"></div>
 		</div>
+
+		<!-- Social links row -->
+		<section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="glass-panel p-4 rounded-2xl flex items-center justify-between hover:border-maroon-800/40 transition-colors group">
+				<div class="flex items-center gap-3">
+					<span class="text-xl">💼</span>
+					<span class="text-sm font-semibold text-text-secondary group-hover:text-text-primary">LinkedIn</span>
+				</div>
+				<span class="text-zinc-500">→</span>
+			</a>
+
+			<!-- GitHub -->
+			<a href="https://github.com/Chetansai11" target="_blank" class="glass-panel p-4 rounded-2xl flex items-center justify-between hover:border-maroon-800/40 transition-colors group">
+				<div class="flex items-center gap-3">
+					<span class="text-xl">💻</span>
+					<span class="text-sm font-semibold text-text-secondary group-hover:text-text-primary">GitHub</span>
+				</div>
+				<span class="text-zinc-500">→</span>
+			</a>
+
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="glass-panel p-4 rounded-2xl flex items-center justify-between hover:border-maroon-800/40 transition-colors group">
+				<div class="flex items-center gap-3">
+					<span class="text-xl">📸</span>
+					<span class="text-sm font-semibold text-text-secondary group-hover:text-text-primary">Instagram</span>
+				</div>
+				<span class="text-zinc-500">→</span>
+			</a>
+		</section>
+
+		<!-- Resume download card -->
+		<section class="glass-panel p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 hover:border-maroon-800/40 transition-all duration-300">
+			<div class="flex flex-col items-center sm:items-start text-center sm:text-left gap-1">
+				<h3 class="font-bold text-lg text-text-primary">Looking for my CV / Resume?</h3>
+				<p class="text-xs text-text-secondary leading-relaxed">Download my complete professional summary as a PDF document.</p>
+			</div>
+			<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" class="px-6 py-3 rounded-xl text-xs font-semibold bg-maroon-900 hover:bg-maroon-800 text-white shadow-lg flex items-center gap-2 transform hover:-translate-y-0.5 transition-all">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				Download Resume (PDF)
+			</a>
+		</section>
+
 	</main>
 
 	<!-- Footer -->
-	<footer>
-		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
-		<ul class="footer-links">
-			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
-			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
-			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
-		</ul>
+	<footer class="border-t border-dark-border py-8 mt-16 relative z-10 bg-zinc-950/60 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+			<p>&copy; 2026 Chetan Sai Borra. All rights reserved.</p>
+			<ul class="flex items-center gap-6 font-medium">
+				<li><a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="hover:text-text-primary transition-colors">LinkedIn</a></li>
+				<li><a href="https://github.com/Chetansai11" target="_blank" class="hover:text-text-primary transition-colors">GitHub</a></li>
+				<li><a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="hover:text-text-primary transition-colors">Instagram</a></li>
+				<li><a href="mailto:sai311235@gmail.com" class="hover:text-text-primary transition-colors">Email</a></li>
+			</ul>
+		</div>
 	</footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/theme.js"></script>
-	<script src="assets/js/navigation.js"></script>
-	<script src="assets/js/page-transitions.js"></script>
+	<!-- Navigation scripts -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const menuBtn = document.querySelector('.mobile-menu-toggle');
+			const menu = document.querySelector('.mobile-menu');
+			if (menuBtn && menu) {
+				menuBtn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+				});
+			}
+		});
+	</script>
 </body>
 </html>
-

@@ -1,400 +1,617 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-	<title>Chetan Sai Borra | Home</title>
+	<title>Chetan Sai Borra | Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Chetan Sai Borra - MS in Computer Engineering at Texas A&M. Machine Learning, Computer Vision, and Robotics Engineer." />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Theme switcher script immediately in head -->
+	<script src="assets/js/theme-toggle.js"></script>
 </head>
-<body>
+<body class="bg-dark-bg text-text-primary font-sans min-h-screen relative overflow-x-hidden bg-grid-pattern transition-colors duration-300">
 
-	<!-- Loading Screen - Only shows on first visit -->
-	<div class="loader">
-		<div class="signature-container">
-			<div class="logo-hexagon">
-				<div class="hexagon">
-					<svg viewBox="0 0 100 100">
-						<polygon points="50,5 90,25 90,75 50,95 10,75 10,25" />
-					</svg>
-				</div>
-				<div class="logo-letters">CB</div>
-			</div>
-			<div class="signature-text">Chetan Sai Borra</div>
-			<div class="loader-progress">
-				<div class="loader-progress-bar"></div>
-			</div>
-		</div>
-	</div>
+	<!-- Ambient glow effects -->
+	<div class="absolute top-[10%] left-[20%] w-[40vw] h-[40vw] rounded-full bg-maroon-900/5 dark:bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow"></div>
+	<div class="absolute top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-maroon-900/5 dark:bg-maroon-900/5 blur-[120px] pointer-events-none animate-pulse-glow" style="animation-delay: 1.5s;"></div>
 
 	<!-- Navigation -->
-	<nav>
-		<div class="nav-container">
-			<a href="index.html" class="nav-brand signature-brand">Chetan Sai Borra</a>
-			<ul class="nav-links">
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="education.html">Education</a></li>
-				<li><a href="experience.html">Experience</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact Me</a></li>
+	<nav class="sticky top-0 z-50 glass-panel border-b border-dark-border backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold tracking-tight text-gradient-maroon">
+				Chetan Sai Borra
+			</a>
+			
+			<!-- Desktop Menu -->
+			<ul class="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
+				<li><a href="index.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Home</a></li>
+				<li><a href="education.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Education</a></li>
+				<li><a href="experience.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Experience</a></li>
+				<li><a href="skills.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Skills</a></li>
+				<li><a href="projects.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Projects</a></li>
+				<li><a href="contact.html" class="hover:text-maroon-900 dark:hover:text-maroon-300 transition-colors">Contact</a></li>
 			</ul>
-			<div style="display: flex; align-items: center;">
-				<button class="theme-toggle" aria-label="Toggle theme">
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+
+			<!-- Header CTA & Theme Toggle -->
+			<div class="hidden md:flex items-center gap-4">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border hover:border-maroon-900/30 transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically by script -->
 				</button>
-				<button class="mobile-menu-toggle" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
+				<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="px-4 py-2 rounded-lg text-sm font-medium bg-maroon-900 hover:bg-maroon-800 text-white transition-all flex items-center gap-2">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="7 10 12 15 17 10"/>
+						<line x1="12" y1="15" x2="12" y2="3"/>
+					</svg>
+					Resume
+				</a>
+			</div>
+
+			<!-- Mobile Theme toggle and Menu Button -->
+			<div class="flex items-center gap-2 md:hidden">
+				<button class="theme-toggle p-2.5 rounded-xl bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 border border-dark-border transition-all cursor-pointer" aria-label="Toggle theme">
+					<!-- SVG filled dynamically -->
+				</button>
+				<button class="mobile-menu-toggle p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label="Toggle menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="4" y1="12" x2="20" y2="12"></line>
+						<line x1="4" y1="6" x2="20" y2="6"></line>
+						<line x1="4" y1="18" x2="20" y2="18"></line>
+					</svg>
 				</button>
 			</div>
+		</div>
+
+		<!-- Mobile Menu Panel -->
+		<div class="mobile-menu hidden md:hidden glass-panel border-b border-dark-border px-6 py-6 absolute top-full left-0 w-full flex flex-col gap-4">
+			<a href="index.html" class="text-text-primary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Home</a>
+			<a href="education.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Education</a>
+			<a href="experience.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Experience</a>
+			<a href="skills.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Skills</a>
+			<a href="projects.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Projects</a>
+			<a href="contact.html" class="text-text-secondary hover:text-maroon-900 dark:hover:text-maroon-300 text-lg font-medium py-2">Contact</a>
+			<a href="images/CHETAN%20SAI%20BORRA_AI%20Engineer.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="mt-4 px-4 py-3 rounded-xl text-center font-medium bg-maroon-900 text-white flex items-center justify-center gap-2">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				Resume
+			</a>
 		</div>
 	</nav>
 
 	<!-- Main Content -->
-	<main>
+	<main class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col gap-24 relative z-10">
+
 		<!-- Hero Section -->
-		<section class="hero">
-			<div class="hero-container">
-				<div class="hero-content">
-					<h1>Chetan Sai Borra</h1>
-					<div class="hero-subtitle">
-						<span class="subtitle-text">I'm a </span>
-						<span class="subtitle-rotating" id="rotating-text">AI Engineer</span>
+		<section class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-8">
+			<!-- Hero Content -->
+			<div class="flex-1 flex flex-col items-start gap-6">
+				<!-- Badges row -->
+				<div class="flex flex-wrap items-center gap-3">
+					<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-maroon-900/20 text-maroon-700 dark:text-maroon-300 border border-maroon-900/30">
+						<span class="w-1.5 h-1.5 rounded-full bg-maroon-600"></span>
+						Texas A&M Graduate
+					</span>
+					<a href="https://learn.microsoft.com/api/credentials/share/en-us/BorraChetanSai-6605/2B0CF492EDC8CB54?sharingId=DF321D7720A08C1A" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 transition-all">
+						<img src="images/events/microsoft-certified-associate-badge.svg" alt="Microsoft Badge" class="w-4 h-4 object-contain">
+						Azure AI Apps & Agents Developer ↗
+					</a>
+					<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+						<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 aggie-pulse"></span>
+						Available for roles
+					</span>
+				</div>
+
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+					Hi, I'm <span class="text-gradient-maroon">Chetan Sai Borra</span>
+				</h1>
+
+				<h2 class="text-xl sm:text-2xl font-semibold text-text-secondary">
+					AI Engineer & Robotics Specialist
+				</h2>
+
+				<p class="text-base sm:text-lg text-text-secondary max-w-xl leading-relaxed">
+					Master of Science in Computer Engineering from **Texas A&M University** (GPA 4.0). I build sustainable, scalable deep learning systems, real-time time-series pipelines, and motion planning algorithms for robotics.
+				</p>
+
+				<div class="flex flex-wrap gap-4 mt-2 w-full sm:w-auto">
+					<a href="#projects" class="px-6 py-3 text-center rounded-xl font-medium bg-maroon-900 hover:bg-maroon-800 text-white shadow-lg shadow-maroon-900/10 hover:shadow-maroon-900/30 transition-all duration-300 w-full sm:w-auto transform hover:-translate-y-0.5">
+						View My Work
+					</a>
+					<a href="contact.html" class="px-6 py-3 text-center rounded-xl font-medium bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 text-text-primary border border-dark-border hover:border-maroon-900/30 transition-all duration-300 w-full sm:w-auto backdrop-blur-md transform hover:-translate-y-0.5">
+						Get in Touch
+					</a>
+				</div>
+			</div>
+
+			<!-- Hero Image/Visual -->
+			<div class="w-48 h-48 md:w-64 md:h-64 relative flex-shrink-0 group">
+				<div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-maroon-900 to-transparent opacity-30 dark:opacity-50 blur-xl group-hover:opacity-60 transition-all duration-500"></div>
+				<div class="w-full h-full rounded-3xl overflow-hidden border border-dark-border relative z-10 shadow-2xl bg-dark-card">
+					<img src="images/avatar.jpg" alt="Chetan Sai Borra" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600'">
+				</div>
+			</div>
+		</section>
+
+		<!-- Fast Stats Section -->
+		<section class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+			<div class="glass-panel p-6 rounded-2xl flex flex-col items-center sm:items-start text-center sm:text-left">
+				<span class="text-4xl font-extrabold text-gradient-maroon mb-1">4.0 / 4.0</span>
+				<span class="text-sm text-text-secondary font-medium">Master's GPA at Texas A&M</span>
+			</div>
+			<div class="glass-panel p-6 rounded-2xl flex flex-col items-center sm:items-start text-center sm:text-left">
+				<span class="text-4xl font-extrabold text-gradient-maroon mb-1">12+ Deployed</span>
+				<span class="text-sm text-text-secondary font-medium">AI & Robotics Projects</span>
+			</div>
+			<div class="glass-panel p-6 rounded-2xl flex flex-col items-center sm:items-start text-center sm:text-left">
+				<span class="text-4xl font-extrabold text-gradient-maroon mb-1">🏆 2x Hackathons</span>
+				<span class="text-sm text-text-secondary font-medium">Datathon & Invent Prizes Won</span>
+			</div>
+		</section>
+
+		<!-- Selected Projects & Credentials Section (Bento Grid) -->
+		<section id="projects" class="flex flex-col gap-8">
+			<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+				<div class="flex flex-col gap-1">
+					<h2 class="text-2xl font-bold tracking-tight text-gradient-maroon">Selected Projects & Credentials</h2>
+					<p class="text-text-secondary text-sm">A Bento Grid layout of case studies and professional credentials</p>
+				</div>
+				<a href="projects.html" class="text-sm font-semibold text-maroon-700 dark:text-maroon-400 hover:underline flex items-center gap-1 transition-colors">
+					View all 12 projects
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="5" y1="12" x2="19" y2="12"></line>
+						<polyline points="12 5 19 12 12 19"></polyline>
+					</svg>
+				</a>
+			</div>
+
+			<!-- Bento Grid Layout -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				
+				<!-- Card 1: Anomaly Detection (Span 2) -->
+				<div class="md:col-span-2 glass-panel rounded-2xl flex flex-col overflow-hidden hover:glass-panel-hover transition-all duration-300 bento-glow group">
+					<div class="aspect-video w-full overflow-hidden border-b border-dark-border relative bg-dark-card">
+						<img src="images/thumbs/telecom_agent.jpg" alt="Telecom KPI Anomaly Detection" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'">
+						<div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-80"></div>
+						<div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-maroon-900/60 text-maroon-300 border border-maroon-800/45">Multi-Agent AI</span>
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">LangGraph</span>
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">Docker</span>
+						</div>
 					</div>
-					<p>A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
-					<div class="hero-social">
-						<a href="https://github.com/Chetansai11" target="_blank" class="social-icon" aria-label="GitHub">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+					<div class="p-6 flex flex-col justify-between flex-1 gap-4">
+						<div>
+							<h3 class="text-xl font-bold tracking-tight group-hover:text-maroon-900 dark:group-hover:text-maroon-400 transition-colors duration-300">
+								Telecom KPI Anomaly Detection Using AI Agents
+							</h3>
+							<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+								Engineered a multi-agent orchestration framework leveraging LangGraph, MCP, and custom ML models (Isolation Forests, DWT-MLEAD) to monitor cellular KPIs across 100+ sites, reducing response latency by 40%.
+							</p>
+						</div>
+						<div class="flex items-center justify-between">
+							<a href="projects/telecom-kpi-anomaly-detection.html" class="text-sm font-semibold text-text-primary inline-flex items-center gap-1 hover:gap-2 transition-all">
+								Read Case Study
+								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<line x1="5" y1="12" x2="19" y2="12"></line>
+									<polyline points="12 5 19 12 12 19"></svg>
+							</a>
+							<span class="text-xs text-text-secondary font-medium">TAMU Utilities Engine</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 2: Microsoft Azure Bento Card (Span 1) -->
+				<div class="md:col-span-1 glass-panel rounded-2xl p-6 flex flex-col justify-between hover:glass-panel-hover transition-all duration-300 bento-glow group border-maroon-900/10 dark:border-white/5 bg-gradient-to-br from-blue-500/5 via-transparent to-transparent">
+					<div class="flex flex-col gap-4">
+						<div class="flex items-center justify-between">
+							<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+								<img src="images/events/microsoft-certified-associate-badge.svg" alt="Azure AI Apps and Agents Developer Associate Badge" class="w-full h-full object-contain">
+							</div>
+							<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">Microsoft Certified</span>
+						</div>
+						
+						<div>
+							<h3 class="text-lg font-bold tracking-tight text-text-primary group-hover:text-blue-500 transition-colors duration-300">
+								Microsoft Certified: Azure AI Apps and Agents Developer Associate
+							</h3>
+							<p class="text-xs text-text-secondary mt-1.5">
+								Credential Verification Hub
+							</p>
+						</div>
+
+						<div class="p-3.5 rounded-xl bg-white/40 dark:bg-zinc-900/30 border border-dark-border text-xs flex flex-col gap-2 text-text-secondary">
+							<div>
+								<span class="font-semibold block text-[10px] uppercase text-text-secondary/80">Recipient</span>
+								<span class="text-text-primary font-medium">Borra Chetan Sai</span>
+							</div>
+							<div>
+								<span class="font-semibold block text-[10px] uppercase text-text-secondary/80">Verification Code</span>
+								<code class="text-maroon-700 dark:text-maroon-400 font-mono text-[11px]">2B0CF492EDC8CB54</code>
+							</div>
+						</div>
+					</div>
+
+					<a href="https://learn.microsoft.com/api/credentials/share/en-us/BorraChetanSai-6605/2B0CF492EDC8CB54?sharingId=DF321D7720A08C1A" target="_blank" class="w-full mt-4 px-4 py-2.5 rounded-xl text-xs font-semibold text-center text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-500/10 transition-all flex items-center justify-center gap-1.5">
+						Verify Credential ↗
+					</a>
+				</div>
+
+				<!-- Card 3: Image-to-Video Generation (Span 1) -->
+				<div class="md:col-span-1 glass-panel rounded-2xl flex flex-col overflow-hidden hover:glass-panel-hover transition-all duration-300 bento-glow group">
+					<div class="aspect-[4/3] w-full overflow-hidden border-b border-dark-border relative bg-dark-card">
+						<img src="images/thumbs/img_to_vid_thumb.jpg" alt="Image-to-Video Generation" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600'">
+						<div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-80"></div>
+						<div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">PyTorch</span>
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">Diffusion</span>
+						</div>
+					</div>
+					<div class="p-6 flex flex-col justify-between flex-1 gap-4">
+						<div>
+							<h3 class="text-lg font-bold tracking-tight group-hover:text-maroon-900 dark:group-hover:text-maroon-400 transition-colors duration-300">
+								Image-to-Video Generation of Comics
+							</h3>
+							<p class="text-xs text-text-secondary mt-2 leading-relaxed">
+								Developed a 3D latent video diffusion model improving frame interpolation SSIM by 71.8% over standard flow baselines.
+							</p>
+						</div>
+						<a href="projects/image-to-video-generation.html" class="text-xs font-semibold text-text-primary inline-flex items-center gap-1 hover:gap-2 transition-all">
+							Read Case Study
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+								<polyline points="12 5 19 12 12 19"></polyline>
+							</svg>
 						</a>
-						<a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="social-icon" aria-label="LinkedIn">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-						</a>
-						<a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="social-icon" aria-label="Instagram">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-						</a>
 					</div>
-					<a href="images/Chetan_Sai_Borra_comprehesive.pdf" target="_blank" download="Chetan_Sai_Borra_Resume.pdf" class="btn">
-						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;">
-							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-							<polyline points="7 10 12 15 17 10"/>
-							<line x1="12" y1="15" x2="12" y2="3"/>
-						</svg>
-						Resume
-					</a>
 				</div>
-				<div class="hero-image">
-					<img src="images/avatar.jpg" alt="Chetan Sai Borra" id="hero-photo">
-				</div>
-			</div>
-		</section>
 
-		<!-- At a glance: Preview grid (top 2 projects, latest job, about snippet) -->
-		<section class="section muted-bg">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>At a glance</h2>
-					<p>Projects, experience, and a short intro</p>
-				</div>
-				<div class="preview-grid fade-in">
-					<a href="projects/telecom-kpi-anomaly-detection.html" class="preview-card">
-						<div class="preview-label">Featured Project</div>
-						<h3>Telecom KPI Anomaly Detection Using AI Agents</h3>
-						<p>Multi-agent AI system with LangGraph, MCP, and anomaly detection for real-time KPI monitoring.</p>
-					</a>
-					<a href="projects/image-to-video-generation.html" class="preview-card">
-						<div class="preview-label">Featured Project</div>
-						<h3>Image-to-Video Generation of Anime/Comics</h3>
-						<p>3D latent video diffusion with 71.8% SSIM improvement over baseline.</p>
-					</a>
-					<a href="experience.html" class="preview-card preview-card--span-2">
-						<div class="preview-label">Latest Role</div>
-						<h3>ML Engineer – Student · Utilities and Energy Services, Texas A&M University</h3>
-						<p>Designing scalable time-series ML pipelines for anomaly detection and forecasting across 200+ operational systems. Python, Pandas, SQL, deep learning and statistical models (Isolation Forests, ARIMA). Feb 2025 – Present.</p>
-					</a>
-					<div class="preview-card preview-card--span-2" style="cursor: default;">
-						<div class="preview-label">About</div>
-						<h3>Who I am</h3>
-						<p>A passionate engineer who thrives on end-to-end products—sustainable, scalable systems that create impact. MS in Computer Engineering at Texas A&M; focus on Machine Learning, Computer Vision, and Robotics.</p>
+				<!-- Card 4: Autonomous Navigation (Span 2) -->
+				<div class="md:col-span-2 glass-panel rounded-2xl flex flex-col overflow-hidden hover:glass-panel-hover transition-all duration-300 bento-glow group">
+					<div class="aspect-video w-full overflow-hidden border-b border-dark-border relative bg-dark-card">
+						<img src="images/thumbs/automnomus_nav.jpg" alt="Autonomous Navigation" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800'">
+						<div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-80"></div>
+						<div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-maroon-900/60 text-maroon-300 border border-maroon-800/40">ROS 2</span>
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">Path Planning</span>
+							<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900/80 text-zinc-300 border border-zinc-700/50">C++</span>
+						</div>
+					</div>
+					<div class="p-6 flex flex-col justify-between flex-1 gap-4">
+						<div>
+							<h3 class="text-xl font-bold tracking-tight group-hover:text-maroon-900 dark:group-hover:text-maroon-400 transition-colors duration-300">
+								Autonomous Navigation with RRT* & A* in ROS 2
+							</h3>
+							<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+								Programmed a full robot navigation stack in ROS 2 using A* and Rapidly-exploring Random Trees (RRT*) with Pure-Pursuit controller for kinematic path execution in high-fidelity Gazebo environments.
+							</p>
+						</div>
+						<div class="flex items-center justify-between">
+							<a href="projects/autonomous-navigation-rrt-astar.html" class="text-sm font-semibold text-text-primary inline-flex items-center gap-1 hover:gap-2 transition-all">
+								Read Case Study
+								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<line x1="5" y1="12" x2="19" y2="12"></line>
+									<polyline points="12 5 19 12 12 19"></polyline>
+								</svg>
+							</a>
+							<span class="text-xs text-text-secondary font-medium">Robotics & Perception</span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Updates in my life Section -->
-		<section class="section">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>Achievements</h2>
+		<!-- "About & My Journey" Narrative Timeline Section -->
+		<section class="flex flex-col gap-10">
+			<div class="flex flex-col gap-1 items-center md:items-start text-center md:text-left">
+				<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Biography</span>
+				<h2 class="text-3xl font-extrabold tracking-tight text-gradient-maroon">About & My Journey</h2>
+				<p class="text-text-secondary text-sm max-w-xl">A narrative tracking academic research, technical growth, and current systems focus.</p>
+			</div>
+
+			<!-- Visual Vertical Journey Timeline -->
+			<div class="relative pl-6 md:pl-8 border-l-2 border-dark-border flex flex-col gap-12 max-w-3xl mx-auto md:mx-0">
+				
+				<!-- Timeline Block 1 -->
+				<div class="relative group">
+					<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-dark-bg border-2 border-maroon-900 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
+					<h3 class="text-lg font-bold text-text-primary">Foundations in ECE & Deep Learning Research</h3>
+					<span class="text-xs font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider block mt-0.5">Vellore Institute of Technology · 2020 – 2024</span>
+					<p class="text-sm text-text-secondary mt-2.5 leading-relaxed">
+						Began my engineering journey in Electronics and Communication, maintaining a GPA of **9.02/10.0**. Developed a passion for intelligent systems by working as a research assistant, designing **W-Net CNN models** to segment sub-regions of brain tumors in MRI scans with over 90% accuracy.
+					</p>
 				</div>
-				<div class="grid grid-2 fade-in">
-					<a href="updates/tamu-datathon.html" class="card event-card" style="text-decoration: none; color: inherit;">
-						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-1), var(--accent-2));">
-							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M12 2L2 7l10 5 10-5-10-5z"/>
-								<path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-							</svg>
+
+				<!-- Timeline Block 2 -->
+				<div class="relative group">
+					<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-dark-bg border-2 border-maroon-900 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
+					<h3 class="text-lg font-bold text-text-primary">Aerospace Simulation & Control Engineering</h3>
+					<span class="text-xs font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider block mt-0.5">DRDL (Defence Research & Development Lab) · 2023</span>
+					<p class="text-sm text-text-secondary mt-2.5 leading-relaxed">
+						Interned under senior defense scientists at DRDL, Hyderabad. Applied neural-tuning algorithms to pitch control matrices inside MATLAB and Simulink, introducing automated feedback optimizations that improved dynamic flight stability by **11%** and cut overshoot ratios.
+					</p>
+				</div>
+
+				<!-- Timeline Block 3 -->
+				<div class="relative group">
+					<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-dark-bg border-2 border-maroon-900 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
+					<h3 class="text-lg font-bold text-text-primary">Texas A&M Milestones & Hackathon Triumphs</h3>
+					<span class="text-xs font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider block mt-0.5">College Station, TX · 2024 – 2025</span>
+					<p class="text-sm text-text-secondary mt-2.5 leading-relaxed">
+						Admitted to the Master of Science in Computer Engineering program at **Texas A&M University**, maintaining a **4.0 GPA**. Competed globally, securing **2nd Place ($2,500)** at Aggie Invent for the Planet for an AI nitrate filtration system, and won the **Best Use of MongoDB Atlas** award at TAMU Datathon for building the G-3 conversational assistant.
+					</p>
+				</div>
+
+				<!-- Timeline Block 4 -->
+				<div class="relative group">
+					<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-dark-bg border-2 border-maroon-900 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
+					<h3 class="text-lg font-bold text-text-primary">Scalable Energy IoT Analytics & Core Focus</h3>
+					<span class="text-xs font-semibold text-maroon-700 dark:text-maroon-400 uppercase tracking-wider block mt-0.5">Utilities & Energy Services, TAMU · Present</span>
+					<p class="text-sm text-text-secondary mt-2.5 leading-relaxed">
+						Currently serving as a Student ML Engineer for TAMU's Energy infrastructure. Designing production-grade time-series ETL layers and deploying statistical anomaly predictors (Isolation Forests, ARIMA) over thousands of industrial sensors to protect critical campus systems.
+					</p>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Personal Gallery Section ("Life & Moments") -->
+		<section class="flex flex-col gap-8">
+			<div class="flex flex-col gap-1 items-center md:items-start text-center md:text-left">
+				<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Gallery</span>
+				<h2 class="text-3xl font-extrabold tracking-tight text-gradient-maroon">Life & Moments</h2>
+				<p class="text-text-secondary text-sm">Snapshots of campus projects, team hackathons, and certifications at Texas A&M</p>
+			</div>
+
+			<!-- Grid of Photos with Hover Captions -->
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+				
+				<!-- Photo 1: Team Collab -->
+				<div class="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-lg">
+					<img src="images/events/Tamu-Datathon-Team.JPG" alt="TAMU Datathon team collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+						<div class="text-white">
+							<p class="text-sm font-bold">TAMU Datathon Team</p>
+							<p class="text-[10px] text-zinc-300">Hackathon collaboration on G-3 Google Assistant</p>
 						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-1);">TAMU Datathon</h3>
-						<p style="color: var(--text-secondary); margin-bottom: 1rem;">Won the <strong style="color: var(--accent-1);">Best Use of MongoDB</strong> award for G-3, an intelligent Google Workspace assistant that unifies 20+ Google services into one natural language interface with context-aware conversations.</p>
-						<div class="event-badge achievement-badge">🏆 Best Use of MongoDB Atlas</div>
-					</a>
-					<a href="updates/aggie-invent.html" class="card event-card" style="text-decoration: none; color: inherit;">
-						<div class="event-icon" style="background: linear-gradient(135deg, var(--accent-3), var(--accent-4));">
-							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-							</svg>
+					</div>
+				</div>
+
+				<!-- Photo 2: Award ceremony -->
+				<div class="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-lg">
+					<img src="images/events/Tamu-datathon-Award-taking.JPG" alt="Award presentation at Datathon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+						<div class="text-white">
+							<p class="text-sm font-bold">Winning MongoDB Atlas Prize</p>
+							<p class="text-[10px] text-zinc-300">Award ceremony at the annual Datathon</p>
 						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-3);">Aggie Invent</h3>
-						<p style="color: var(--text-secondary); margin-bottom: 1rem;">Our team 'Bio Ditch' secured <strong style="color: var(--accent-3);">2nd Place ($2,500)</strong> and won the <strong style="color: var(--accent-3);">Best Prototype Award</strong> at Aggie Invent for the Planet! Developed an AI-driven solution to reduce nitrates in farm runoff, combining environmental science with sustainable farming practices.</p>
-						<div class="event-badge achievement-badge">🏆 2nd Place & Best Prototype</div>
-					</a>
+					</div>
+				</div>
+
+				<!-- Photo 3: Presentation demo -->
+				<div class="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-lg">
+					<img src="images/events/Tamu-Datathon-MCP-demo.jpg" alt="Presenting G-3 MCP interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+						<div class="text-white">
+							<p class="text-sm font-bold">Conversational MCP Presentation</p>
+							<p class="text-[10px] text-zinc-300">Demonstrating G-3 Google Workspace integrations</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Photo 4: Aggie Invent Team -->
+				<div class="group relative aspect-video sm:aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-lg sm:col-span-2 md:col-span-1">
+					<img src="images/events/aggie-invent-Team.jpeg" alt="Bio Ditch team at Aggie Invent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+						<div class="text-white">
+							<p class="text-sm font-bold">Team 'Bio Ditch' at Aggie Invent</p>
+							<p class="text-[10px] text-zinc-300">Secured 2nd Place & Best Prototype</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Photo 5: Invent certificate -->
+				<div class="group relative aspect-video sm:aspect-square md:aspect-auto md:col-span-2 rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-lg">
+					<img src="images/events/aggie-invent-certificate.jpg" alt="Aggie Invent 2nd Place certificate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+						<div class="text-white">
+							<p class="text-sm font-bold">Global 2nd Place Certificate</p>
+							<p class="text-[10px] text-zinc-300">Invent for the Planet global validation certificate</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Achievements Section -->
+		<section class="flex flex-col gap-6">
+			<div class="flex flex-col items-start gap-1">
+				<h2 class="text-2xl font-bold tracking-tight text-gradient-maroon">Key Achievements</h2>
+				<p class="text-text-secondary text-sm">Award-winning solutions developed during my academic journey</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<!-- TAMU Datathon -->
+				<a href="updates/tamu-datathon.html" class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:glass-panel-hover transition-all duration-300 bento-glow group relative overflow-hidden">
+					<div class="flex items-center justify-between">
+						<div class="w-12 h-12 rounded-xl bg-maroon-900/30 border border-maroon-800/50 flex items-center justify-center text-maroon-700 dark:text-maroon-300 font-bold group-hover:scale-110 transition-transform duration-300">
+							🏆
+						</div>
+						<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-maroon-900/20 text-maroon-700 dark:text-maroon-300 border border-maroon-800/30">MongoDB Winner</span>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold group-hover:text-maroon-900 dark:group-hover:text-maroon-400 transition-colors duration-300">TAMU Datathon</h3>
+						<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+							Won the **Best Use of MongoDB Atlas** award for **G-3**, an intelligent Google Workspace assistant unifying 20+ Google services with context-aware natural language conversation.
+						</p>
+					</div>
+				</a>
+
+				<!-- Aggie Invent -->
+				<a href="updates/aggie-invent.html" class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:glass-panel-hover transition-all duration-300 bento-glow group relative overflow-hidden">
+					<div class="flex items-center justify-between">
+						<div class="w-12 h-12 rounded-xl bg-maroon-900/30 border border-maroon-800/50 flex items-center justify-center text-maroon-700 dark:text-maroon-300 font-bold group-hover:scale-110 transition-transform duration-300">
+							🌎
+						</div>
+						<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-maroon-900/20 text-maroon-700 dark:text-maroon-300 border border-maroon-800/30">2nd Place Global</span>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold group-hover:text-maroon-900 dark:group-hover:text-maroon-400 transition-colors duration-300">Aggie Invent for the Planet</h3>
+						<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+							Secured **2nd Place ($2,500)** and won the **Best Prototype Award**. Engineered an AI-driven system to reduce nitrates in agricultural runoff using real-time sensor analytics.
+						</p>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- Experience Section (Quick overview) -->
+		<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<!-- Side intro info -->
+			<div class="flex flex-col gap-4">
+				<span class="text-xs font-semibold tracking-wider text-maroon-700 dark:text-maroon-400 uppercase">Work Experience</span>
+				<h2 class="text-3xl font-bold tracking-tight text-text-primary">Professional Journey</h2>
+				<p class="text-text-secondary text-sm leading-relaxed">
+					Building production-ready systems, optimizing computational pipelines, and collaborating on academic and defense research programs.
+				</p>
+				<a href="experience.html" class="text-sm font-semibold text-maroon-700 dark:text-maroon-400 hover:underline inline-flex items-center gap-1 mt-2">
+					View complete experience timeline
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="5" y1="12" x2="19" y2="12"></line>
+						<polyline points="12 5 19 12 12 19"></polyline>
+					</svg>
+				</a>
+			</div>
+
+			<!-- Quick timeline list -->
+			<div class="md:col-span-2 flex flex-col gap-6">
+				<!-- Experience Item 1 -->
+				<div class="glass-panel p-6 rounded-2xl flex gap-4 hover:border-maroon-800/40 transition-colors">
+					<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-maroon-900/20 border border-maroon-800/30 flex items-center justify-center text-maroon-700 dark:text-maroon-300 font-bold text-xs">
+						TAMU
+					</div>
+					<div>
+						<h3 class="font-bold text-text-primary">ML Engineer – Student</h3>
+						<p class="text-xs text-text-secondary mt-0.5">Utilities & Energy Services, Texas A&M University · 2025 – Present</p>
+						<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+							Building scalable time-series anomaly detection pipelines (Isolation Forests, ARIMA) over IoT sensors streams across 200+ operational systems.
+						</p>
+					</div>
+				</div>
+
+				<!-- Experience Item 2 -->
+				<div class="glass-panel p-6 rounded-2xl flex gap-4 hover:border-maroon-800/40 transition-colors">
+					<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-zinc-900/30 border border-dark-border flex items-center justify-center text-zinc-500 font-bold text-xs">
+						VIT
+					</div>
+					<div>
+						<h3 class="font-bold text-text-primary">Research Assistant</h3>
+						<p class="text-xs text-text-secondary mt-0.5">Vellore Institute of Technology · 2023 – 2024</p>
+						<p class="text-sm text-text-secondary mt-2 leading-relaxed">
+							Optimized MRI brain tumor segmentation models (W-Net, U-Net) to achieve over 90% accuracy and 72% Mean IOU on the BraTS dataset.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Projects Section -->
-		<section class="section muted-bg">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>Selected Projects</h2>
-					<p>End-to-end projects: research and deployed prototypes</p>
+		<!-- Quick Skills Grid -->
+		<section class="flex flex-col gap-8">
+			<div class="flex items-center justify-between">
+				<div class="flex flex-col gap-1">
+					<h2 class="text-2xl font-bold tracking-tight text-gradient-maroon">Top Skills</h2>
+					<p class="text-text-secondary text-sm">Core domains and technologies I specialize in</p>
 				</div>
-				<div class="grid grid-3 fade-in">
-					<a href="projects/telecom-kpi-anomaly-detection.html" class="project-card">
-						<img src="images/thumbs/telecom_agent.jpg" alt="Telecom KPI Anomaly Detection" class="project-image" />
-						<div class="project-content">
-							<h3>Telecom KPI Anomaly Detection Using AI Agents</h3>
-							<p>Multi-agent AI system with LangGraph, MCP, and anomaly detection for real-time KPI monitoring.</p>
-							<div class="project-tags">
-								<span class="tag">LangGraph</span>
-								<span class="tag">LLMs</span>
-							</div>
-						</div>
-					</a>
-					<a href="projects/image-to-video-generation.html" class="project-card">
-						<img src="images/thumbs/img_to_vid_thumb.jpg" alt="Image-to-Video Generation" class="project-image" />
-						<div class="project-content">
-							<h3>Image-to-Video Generation of Anime/Comics</h3>
-							<p>3D latent video diffusion with 71.8% SSIM improvement over baseline.</p>
-							<div class="project-tags">
-								<span class="tag">Video Diffusion</span>
-								<span class="tag">PyTorch</span>
-							</div>
-						</div>
-					</a>
-					<a href="projects/rag-youtube-long-form-qa.html" class="project-card">
-						<img src="images/thumbs/RAG_Thumb.jpg" alt="RAG YouTube Long-Form QA" class="project-image" />
-						<div class="project-content">
-							<h3>RAG from YouTube for Long-Form QA</h3>
-							<p>RAG pipeline transforming video into searchable knowledge with LangChain and LLMs.</p>
-							<div class="project-tags">
-								<span class="tag">LangChain</span>
-								<span class="tag">RAG</span>
-							</div>
-						</div>
-					</a>
-					<a href="projects/meal-nutrition-analysis.html" class="project-card">
-						<img src="images/thumbs/08.jpg" alt="Meal Nutrition Analysis" class="project-image" />
-						<div class="project-content">
-							<h3>Meal Nutrition Analysis via Multi-Modal Deep Learning</h3>
-							<p>CNNs, LSTMs, and demographic embeddings—34% accuracy boost.</p>
-							<div class="project-tags">
-								<span class="tag">PyTorch</span>
-								<span class="tag">CNN</span>
-							</div>
-						</div>
-					</a>
-					<a href="projects/autonomous-navigation-rrt-astar.html" class="project-card">
-						<img src="images/thumbs/automnomus_nav.jpg" alt="Autonomous Navigation" class="project-image" />
-						<div class="project-content">
-							<h3>Autonomous Navigation with RRT* and A*</h3>
-							<p>ROS 2 motion planning with A*, RRT*, and pure-pursuit control.</p>
-							<div class="project-tags">
-								<span class="tag">ROS 2</span>
-								<span class="tag">Motion Planning</span>
-							</div>
-						</div>
-					</a>
-					<a href="projects/face-tracking-robot.html" class="project-card">
-						<img src="images/thumbs/12.jpg" alt="Face Tracking Robot" class="project-image" />
-						<div class="project-content">
-							<h3>Face Tracking Robot</h3>
-							<p>4-wheeled mobile base with computer vision for person following.</p>
-							<div class="project-tags">
-								<span class="tag">Computer Vision</span>
-								<span class="tag">Arduino</span>
-							</div>
-						</div>
-					</a>
+				<a href="skills.html" class="text-sm font-semibold text-maroon-700 dark:text-maroon-400 hover:underline inline-flex items-center gap-1">
+					All skills
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="5" y1="12" x2="19" y2="12"></line>
+						<polyline points="12 5 19 12 12 19"></polyline>
+					</svg>
+				</a>
+			</div>
+
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">🐍</span>
+					<span class="text-xs font-semibold">Python</span>
 				</div>
-				<div class="text-center mt-2 fade-in">
-					<a href="projects.html" class="btn btn-ghost">View All Projects</a>
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">🔥</span>
+					<span class="text-xs font-semibold">PyTorch</span>
+				</div>
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">🤖</span>
+					<span class="text-xs font-semibold">ROS 2</span>
+				</div>
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">👁️</span>
+					<span class="text-xs font-semibold">Computer Vision</span>
+				</div>
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">🐳</span>
+					<span class="text-xs font-semibold">Docker</span>
+				</div>
+				<div class="glass-panel p-4 rounded-xl text-center flex flex-col items-center gap-2 hover:border-maroon-800/40 transition-colors">
+					<span class="text-2xl">📊</span>
+					<span class="text-xs font-semibold">Data Science</span>
 				</div>
 			</div>
 		</section>
 
-		<!-- Education Section -->
-		<section class="section">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>Education</h2>
-					<p>Academic journey and achievements</p>
-				</div>
-				<div class="grid grid-2 fade-in">
-					<div class="card">
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-1);">Texas A&M University</h3>
-						<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Master of Science in Computer Engineering</p>
-						<p style="font-weight: 600; margin-bottom: 0.5rem;">GPA: 4.0/4.0</p>
-						<p style="color: var(--text-secondary);">Focus: Machine Learning, Computer Vision, and Robotics</p>
-					</div>
-					<div class="card">
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-2);">Vellore Institute of Technology</h3>
-						<p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Bachelor of Technology in Electronics and Communication Engineering</p>
-						<p style="font-weight: 600;">GPA: 9.02/10.0</p>
-					</div>
-				</div>
-				<div class="text-center mt-2 fade-in">
-					<a href="education.html" class="btn btn-ghost">View Full Education & Research</a>
-				</div>
+		<!-- Footer Contact CTA -->
+		<section class="glass-panel p-8 md:p-12 rounded-3xl flex flex-col items-center text-center gap-6 relative overflow-hidden bento-glow">
+			<div class="absolute inset-0 bg-gradient-to-tr from-maroon-900/10 to-transparent opacity-40 dark:opacity-60 pointer-events-none"></div>
+			
+			<div class="flex flex-col gap-2 relative z-10 max-w-xl">
+				<h2 class="text-3xl font-extrabold tracking-tight text-gradient-maroon">Let's Build Something Impactful</h2>
+				<p class="text-text-secondary text-sm sm:text-base leading-relaxed mt-2">
+					I am actively seeking internships and full-time opportunities in AI/ML engineering, computer vision, and robotics. Let's discuss how I can contribute to your team.
+				</p>
+			</div>
+
+			<div class="flex flex-wrap justify-center gap-4 relative z-10">
+				<a href="contact.html" class="px-6 py-3 rounded-xl font-medium bg-maroon-900 hover:bg-maroon-800 text-white shadow-lg transition-all transform hover:-translate-y-0.5">
+					Contact Me
+				</a>
+				<button onclick="navigator.clipboard.writeText('sai311235@gmail.com'); alert('Email copied to clipboard!');" class="px-6 py-3 rounded-xl font-medium bg-white/5 hover:bg-white/10 dark:bg-white/5 dark:hover:bg-white/10 text-text-primary border border-dark-border transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+					Copy Email Address
+				</button>
 			</div>
 		</section>
 
-		<!-- Skills Section -->
-		<section class="section muted-bg">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>Technical Skills</h2>
-					<p>Technologies and tools I work with</p>
-				</div>
-				<div class="grid grid-3 fade-in">
-					<div class="card">
-						<h3 style="margin-bottom: 1.5rem; color: var(--accent-1);">🤖 AI Engineer</h3>
-						<div class="skills-list">
-							<span class="skill-badge">Python</span>
-							<span class="skill-badge">PyTorch</span>
-							<span class="skill-badge">TensorFlow</span>
-							<span class="skill-badge">Deep Learning</span>
-							<span class="skill-badge">Transformers</span>
-							<span class="skill-badge">NLP</span>
-							<span class="skill-badge">Computer Vision</span>
-							<span class="skill-badge">Reinforcement Learning</span>
-						</div>
-					</div>
-					<div class="card">
-						<h3 style="margin-bottom: 1.5rem; color: var(--accent-2);">🤖 Robotics Engineer</h3>
-						<div class="skills-list">
-							<span class="skill-badge">ROS2</span>
-							<span class="skill-badge">Gazebo</span>
-							<span class="skill-badge">Control Systems</span>
-							<span class="skill-badge">Path Planning</span>
-							<span class="skill-badge">SLAM</span>
-							<span class="skill-badge">Kinematics</span>
-							<span class="skill-badge">OpenCV</span>
-							<span class="skill-badge">Embedded Systems</span>
-						</div>
-					</div>
-					<div class="card">
-						<h3 style="margin-bottom: 1.5rem; color: var(--accent-3);">📊 Data Scientist</h3>
-						<div class="skills-list">
-							<span class="skill-badge">Python</span>
-							<span class="skill-badge">Pandas</span>
-							<span class="skill-badge">Scikit-learn</span>
-							<span class="skill-badge">Data Analysis</span>
-							<span class="skill-badge">Statistical Modeling</span>
-							<span class="skill-badge">Machine Learning</span>
-							<span class="skill-badge">Data Visualization</span>
-							<span class="skill-badge">SQL</span>
-						</div>
-					</div>
-				</div>
-				<div class="text-center mt-2 fade-in">
-					<a href="skills.html" class="btn btn-ghost">View All Skills</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- Contact Section -->
-		<section class="section">
-			<div class="container">
-				<div class="section-header fade-in">
-					<h2>Get in Touch</h2>
-					<p>Open to internships and full-time roles. Email is best for quick responses.</p>
-				</div>
-				<div class="grid grid-2 fade-in">
-					<div class="card" style="text-align: center;">
-						<div style="width: 64px; height: 64px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-								<polyline points="22,6 12,13 2,6"/>
-							</svg>
-						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-1);">Email</h3>
-						<p><a href="mailto:sai311235@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">sai311235@gmail.com</a></p>
-					</div>
-					<div class="card" style="text-align: center;">
-						<div style="width: 64px; height: 64px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--accent-3), var(--accent-4)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-							</svg>
-						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-3);">Phone</h3>
-						<p style="color: var(--text-secondary);">979-575-9026</p>
-					</div>
-					<div class="card" style="text-align: center;">
-						<div style="width: 64px; height: 64px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--accent-5), var(--accent-6)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-								<circle cx="12" cy="10" r="3"/>
-							</svg>
-						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-5);">Location</h3>
-						<p style="color: var(--text-secondary);">College Station, TX</p>
-					</div>
-					<div class="card" style="text-align: center;">
-						<div style="width: 64px; height: 64px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--accent-2), var(--accent-3)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-								<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-								<rect x="2" y="9" width="4" height="12"/>
-								<circle cx="4" cy="4" r="2"/>
-							</svg>
-						</div>
-						<h3 style="margin-bottom: 0.75rem; color: var(--accent-2);">Social</h3>
-						<div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
-							<a href="https://github.com/Chetansai11" target="_blank" style="padding: 0.5rem 1rem; background: var(--bg-secondary); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 600; font-size: 0.875rem;">GitHub</a>
-							<a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank" style="padding: 0.5rem 1rem; background: var(--bg-secondary); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 600; font-size: 0.875rem;">LinkedIn</a>
-						</div>
-					</div>
-				</div>
-				<div class="text-center mt-2 fade-in">
-					<a href="contact.html" class="btn btn-ghost">View Full Contact Info</a>
-				</div>
-			</div>
-		</section>
 	</main>
 
 	<!-- Footer -->
-	<footer>
-		<p>&copy; 2024 Chetan Sai Borra. All rights reserved.</p>
-		<ul class="footer-links">
-			<li><a href="https://www.linkedin.com/in/chetan-sai-16a252251/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://github.com/Chetansai11" target="_blank">GitHub</a></li>
-			<li><a href="https://www.instagram.com/chetansai11/" target="_blank">Instagram</a></li>
-			<li><a href="mailto:sai311235@gmail.com">Email</a></li>
-		</ul>
+	<footer class="border-t border-dark-border py-8 mt-16 relative z-10 bg-zinc-950/60 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+			<p>&copy; 2026 Chetan Sai Borra. All rights reserved.</p>
+			<ul class="flex items-center gap-6 font-medium">
+				<li><a href="https://www.linkedin.com/in/chetan-sai-b-16a252251/" target="_blank" class="hover:text-text-primary transition-colors">LinkedIn</a></li>
+				<li><a href="https://github.com/Chetansai11" target="_blank" class="hover:text-text-primary transition-colors">GitHub</a></li>
+				<li><a href="https://www.instagram.com/chetan_sai_47/" target="_blank" class="hover:text-text-primary transition-colors">Instagram</a></li>
+				<li><a href="mailto:sai311235@gmail.com" class="hover:text-text-primary transition-colors">Email</a></li>
+			</ul>
+		</div>
 	</footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/theme.js"></script>
-	<script src="assets/js/loader.js"></script>
-	<script src="assets/js/navigation.js"></script>
-	<script src="assets/js/page-transitions.js"></script>
-	<script src="assets/js/subtitle-rotator.js"></script>
+	<!-- Navigation Scripts -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const menuBtn = document.querySelector('.mobile-menu-toggle');
+			const menu = document.querySelector('.mobile-menu');
+			
+			if (menuBtn && menu) {
+				menuBtn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+				});
+			}
+		});
+	</script>
 </body>
 </html>
